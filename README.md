@@ -1,5 +1,5 @@
 <h3 align="center">𝚃𝙷𝙴 𝙲𝙻𝙾𝙽𝙴 𝙾𝙵</h3>
-<h2 align="center"> <a href="https://github.com/sameerpanthi/elitebot">🔥 THE SAVAGE BOT🔥</a></h2>
+<h2 align="center"> <a href="https://github.com/sameerpanthi/elitebot">🔥elitebot🔥</a></h2>
 
 
 ELITES 2.0🔥
