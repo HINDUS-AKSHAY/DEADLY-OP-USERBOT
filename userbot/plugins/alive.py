@@ -38,7 +38,7 @@ file2 = "https://telegra.ph/file/e97d640332ce5eadb3f89.mp4"
 file3 = "https://telegra.ph/file/0b2862d312a2aeb804b36.mp4"
 file4 = "https://telegra.ph/file/866c79e351350a08f2b06.mp4"
 """ =======================CONSTANTS====================== """
-pm_caption = "  __**🔥🔥𝐌𝐀𝐅𝐈𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄🔥🔥**__\n\n"
+pm_caption = "  __**🔥🔥𝐌𝐀bhbb𝐅𝐈𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄🔥🔥**__\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━━━**\n\n"
 pm_caption += (
