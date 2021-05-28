@@ -1,126 +1,66 @@
 <h3 align="center">𝚃𝙷𝙴 𝙲𝙻𝙾𝙽𝙴 𝙾𝙵</h3>
-<h2 align="center"> <a href="https://github.com/H1M4N5HU0P/MAFIA-USERBOT">🔥 𝚃𝙷𝙴 𝙼𝙰𝙵𝙸𝙰𝙱𝙾𝚃 🔥</a></h2>
+<h2 align="center"> <a href="https://github.com/sameerpanthi/elitebot">🔥 THE SAVAGE BOT🔥</a></h2>
 
 
-<h1 align="center">⚡ 𝙼𝙰𝙵𝙸𝙰 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ⚡</h1>
+ELITES 2.0🔥
 
 
-[![MAFIA LOGO](https://telegra.ph/file/b61486075c6ef73dd0d12.jpg)](https://t.me/MafiaBot_Support)
+
+<p align="center">
+
+<img src="https://telegra.ph/file/a65900c74cb9a0bd89c11.jpg">
+
+-------------------------------------------------
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/sameerpanthi/elitebot?utm_source=github.com&utm_medium=referral&utm_content=sameerpanthi/elitebot&utm_campaign=Badge_Grade_Settings)
+[![Size](https://img.shields.io/github/repo-size/sameerpanthi/elitebot?style=flat-square&color=green)](https://github.com/sameerpanthi/elitebot/)   
+[![Python](https://img.shields.io/badge/Python-v3.9-blue)](https://www.python.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sameerpanthi/elitebot/graphs/commit-activity)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/sameerpanthi/elitebot)   
+[![Contributors](https://img.shields.io/github/contributors/sameerpanthi/elitebot?style=flat-square&color=green)](https://github.com/sameerpanthi/elitebot/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/sameerpanthi/elitebot/blob/main/LICENSE)
+[![Sparkline](https://stars.medv.io/sameerpanthi/elitebot)](https://stars.medv.io/sameerpanthi/elitebot)
+
+-------------------------------------------------
+
+~ 𝐁𝐄𝐒𝐓 𝐀𝐍𝐃 𝐌𝐎𝐒𝐓 𝐀𝐖𝐀𝐈𝐓𝐄𝐃 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐓𝐎 𝐌𝐀𝐍𝐀𝐆𝐄 𝐘𝐎𝐔𝐑 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐖𝐈𝐓𝐇 𝐋𝐎𝐀𝐃 𝐎𝐅 𝐏𝐋𝐔𝐆𝐆𝐈𝐍𝐒 𝐀𝐍𝐃 𝐋𝐔𝐗𝐔𝐑𝐈𝐎𝐔𝐒 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒 𝐂𝐎𝐌𝐏𝐀𝐑𝐄𝐃 𝐓𝐎 𝐀𝐍𝐘 𝐎𝐓𝐇𝐄𝐑 𝐁𝐎𝐓 𝐀𝐍𝐃 𝐀𝐋𝐒𝐎 𝐎𝐍𝐄 𝐎𝐅 𝐓𝐇𝐄 𝐌𝐎𝐒𝐓 𝐀𝐃𝐕𝐀𝐍𝐂𝐄𝐃 𝐁𝐎𝐓 𝐖𝐈𝐓𝐇 𝐏𝐋𝐔𝐆𝐆𝐈𝐍𝐒 𝐀𝐍𝐃 𝐖𝐈𝐓𝐇 𝐁𝐄𝐒𝐓 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐅𝐄𝐀𝐓𝐔𝐑𝐄 .
+
+-------------------------------------------------
 
 
-<h2 align="center">The owner would not be responsible for any kind of bans due to the bot.</h2>
+## STATUS OF THIS BOTS 
+<p align="left"><a href="https://github.com/sameerpanthi/elitebot/network/members"><img src="https://img.shields.io/github/forks/sameerpanthi/elitebot?label=Forks&logoColor=Black&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/elitebot/stargazers"><img src="https://img.shields.io/github/stars/sameerpanthi/elitebot?logoColor=Blue&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/elitebot"></a><p align="left"><a href="https://github.com/sameerpanthi/elitebot?"><img src="https://img.shields.io/github/last-commit/sameerpanthi/elitebot?style=plastic"></a>
 
 
-# FORK AT YOUR OWN RISK
+-------------------------------------------------
 
-<details>
+匚尺乇卂ㄒㄖ尺 : [丂卂爪乇乇尺](https://t.me/SAMEER_795)
 
-  <summary> • INSTALLING • </summary>
+-------------------------------------------------
 
-### The Easy Way
+## Join our Support Channel and Group regrading bug fixes
 
-<h4>⚜️ DEPLOY TO HEROKU ⚜️</h4>
+<a href="https://t.me/savage_techy"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a>
+<a href="https://t.me/elites_userbot"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a>
 
-<a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FH1M4N5HU0P%2FMAFIA-BOT&template=https%3A%2F%2Fgithub.com%2FH1M4N5HU0P%2FMAFIA-BOT" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><img alt="Deploy" data-canonical-src="https://www.herokucdn.com/deploy/button.svg" src="https://camo.githubusercontent.com/83b0e95b38892b49184e07ad572c94c8038323fb/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667" style="border-style: none; box-sizing: initial; max-width: 100%;" /></a></div>
+-------------------------------------------------
 
-<h2 align="center"> <a href="https://github.com/H1M4N5HU0P/MAFIA-BOT">⚡ 𝚃𝙷𝙴 𝙼𝙰𝙵𝙸𝙰𝙱𝙾𝚃 ⚡</a></h2>
+## FOR DEPLOY BOT 
 
-</details>
 
-<details>
-  <summary> <h4>Credits 🏅</h4> </summary>
+<a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fsameerpanthi%2Felitebot&template=https%3A%2F%2Fgithub.com%2Fsameerpanthi%2Felitebot" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><img alt="Deploy" data-canonical-src="https://www.herokucdn.com/deploy/button.svg" src="https://camo.githubusercontent.com/83b0e95b38892b49184e07ad572c94c8038323fb/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667" style="border-style: none; box-sizing: initial; max-width: 100%;" /></a></div>
 
-• [JaaduBot](https://github.com/Amberyt/JaaduBot)
+------------------------------------------------
 
-• [Uniborg](https://github.com/spechide/uniborg)
+TAKE STRING FROM HERE -
 
-• [Hêllẞø†](https://github.com/thevaders/vader)
+[![REPL](https://repl.it/badge/github/spandey112/SensibleUserbot)](https://replit.com/@sameerpanthi/SAVAGE-BOT#main.py)
+    
+-------------------------------------------------
 
-• [Kittu](https://t.me/A_viyu)
 
-</details>
-<details>
-  <summary> <h4>Official Supports ✅</h4> </summary>
+CREIDTS -
 
-```
-Get help regarding setting up 
-your MAFIABOT in our official 
-support Group and get updates
-notifications in Update Channel.
-```
+# [MAFIA BOT](https://github.com/H1M4N5HU0P/MAFIA-USERBOT)
 
-<a href="https://t.me/MafiaBot_Support"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-
-</details>
-
-<h1 align="center">⚙️ Set-Up ⚙️</h1>
-
-<details>
-  <summary> <h2>Generate String Session</h2> </summary>
-
-- Termux
-    - Clone `git clone https://github.com/H1M4N5HU0P/MAFIA-BOT.git`
-    - Then Do  `cd MAFIA-BOT`
-    - Run String Generator By
-           `bash string.sh`
-    - Then Fill The Required Details.
-    - API ID, API HASH, PHONE NUMBER (WITH COUNTRY CODE)
- 
-- Repl Run
-    - Click [Here](https://replit.com/@H1M4N5HU0P/MAFIABOT#main.py) to open Repl run.
-    - Click On Green Play Button.
-    - Wait for a while then fill the details.
-    - String will be saved in your Saved Message.
-</details>
-
-<details>
-  <summary> <h3>HOSTING 😉</h3> </summary>
-
-- Choose A Hosting Site. And fill the mandatory vars.
-
-## Deploys
-
-- You Can Deploy it on 
-    - [Zeet](https://zeet.co/new)
-    - [Uffizzi](https://uffizzi.com)
-    - Any Other VPS.
-    - No support for Termux Yet.
-
-## Mandatory Vars
-
-- Some of the environment variables are mandatory.
-- These are listed below.
-    - `APP_ID`:   You can get this value from [here](https://my.telegram.org)
-    - `API_HASH`:   You can get this value from [here](https://my.telegram.org)
-    - `ENV`:   `ANYTHING`
-    - `STRING_SESSION`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://replit.com/@H1M4N5HU0P/MAFIABOT#main.py)
-    - `LOG_GROUP`:   Make a Channel Or Group and get it's id.
-    - `DATABASE_URL`:   Make a database on elephant sql and paste the url.
-    - `DB_URI`:   Same as `DATABASE_URL`
-    - `BOT_TOKEN`:   Make a Bot from [Botfather](https://t.me/botfather) and paste the bot token here.
-    - `BOT_USERNAME`:   Paste the Username of bot that you made from [BotFather](https://t.me/botfather).
-- The userbot will not work without setting the mandatory vars.
-
-</details>
-
-<details>
-  <summary> <h4>• LICENSE •</h4> </summary>
-
-![](https://www.gnu.org/graphics/gplv3-or-later.png)
-
-Copyright (C) 2021 H1M4N5HU0P
-
-Poject [𝙼𝙰𝙵𝙸𝙰𝙱𝙾𝚃](https://github.com/H1M4N5HU0P/MAFIA-BOT) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-</details>
