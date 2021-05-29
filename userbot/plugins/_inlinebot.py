@@ -136,7 +136,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
-              "👑 Elites spam bot Menu Provider Is now Closed👑\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**", 5, link_preview=False
+              "👑 Elites spam bot Menu Provider Is now Closed👑\n\n         **[© elite bot ™](t.me/elites_userbot)**", 5, link_preview=False
             )
         else:
             mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN ELITES SPAM BOT AND USE. © elites bot™"
