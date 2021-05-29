@@ -102,7 +102,7 @@ async def kang(args):
         packname = f"HB_{user.username}_elite bot_{pack}"
         packnick = (
             f"elite bot Vol.{pack}"
-            if if mafiabot
+            if mafiabot
             else f"@{user.username}'s elite bot Vol.{pack}"
         )
         cmd = "/newpack"
