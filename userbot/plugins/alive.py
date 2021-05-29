@@ -40,7 +40,7 @@ pm_caption = "__                       **😎🔥 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒�
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
 pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
 pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.𝟓\n"
-pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐄𝐋𝐈𝐓𝐄𝐒 𝐎𝐏](https://t.me/ELITES_OPP)\n"
+pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐄𝐋𝐈𝐓𝐄𝐒 𝐎𝐏](https://t.me/elites_network)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/joinchat/0KCyT0MHyAhmMmRl)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/elites_userbot)\n"
 pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](@ELITEBOY_XD)\n" 
@@ -60,45 +60,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(edit_time)
     ok = await borg.edit_message(alive.chat_id, on, file=file2) 
 
-    await asyncio.sleep(edit_time)
-    ok2 = await borg.edit_message(alive.chat_id, ok, file=file3)
-
-    await asyncio.sleep(edit_time)
-    ok3 = await borg.edit_message(alive.chat_id, ok2, file=file1)
     
-    await asyncio.sleep(edit_time)
-    ok4 = await borg.edit_message(alive.chat_id, ok3, file=file3)
-    
-    await asyncio.sleep(edit_time)
-    ok5 = await borg.edit_message(alive.chat_id, ok4, file=file2)
-    
-    await asyncio.sleep(edit_time)
-    ok6 = await borg.edit_message(alive.chat_id, ok5, file=file4)
-    
-    await asyncio.sleep(edit_time)
-    ok7 = await borg.edit_message(alive.chat_id, ok6, file=file1)
-    
-    await asyncio.sleep(edit_time)
-    ok8 = await borg.edit_message(alive.chat_id, ok7, file=file2) 
-
-    await asyncio.sleep(edit_time)
-    ok9 = await borg.edit_message(alive.chat_id, ok8, file=file3)
-
-    await asyncio.sleep(edit_time)
-    ok10 = await borg.edit_message(alive.chat_id, ok9, file=file1)
-    
-    await asyncio.sleep(edit_time)
-    ok11 = await borg.edit_message(alive.chat_id, ok10, file=file3)
-    
-    await asyncio.sleep(edit_time)
-    ok12 = await borg.edit_message(alive.chat_id, ok11, file=file2)
-    
-    await asyncio.sleep(edit_time)
-    ok13 = await borg.edit_message(alive.chat_id, ok12, file=file4)
-    
-    await asyncio.sleep(edit_time)
-    ok14 = await borg.edit_message(alive.chat_id, on, file=file1)
-
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, caption=pm_caption)
     await alive.delete()
