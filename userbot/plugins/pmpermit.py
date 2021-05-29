@@ -20,7 +20,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 MAFIAPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/a65900c74cb9a0bd89c11.jpg"
+    else "https://telegra.ph/file/590c1a6d30ba3a44ddab6.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
