@@ -137,8 +137,8 @@ async def kang(args):
                     pack += 1
                     packname = f"HB_{user.username}_by_{user.username}_{pack}"
                     packnick = (
-                        f"{elite bor} Vol.{pack}"
-                        if elite bot
+                        f"{mafiabot} Vol.{pack}"
+                        if mafiabot
                         else f"@{user.username}'s elite bot Vol.{pack}"
                     )
                     await args.edit(
