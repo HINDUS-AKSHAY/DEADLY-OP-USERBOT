@@ -46,7 +46,7 @@ pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉�
 pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](@ELITEBOY_XD)\n" 
                   
 pm_caption += " \n"
-pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/sameerpanthi/elitebot)"
+pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT)"
 
 
 # @command(outgoing=True, pattern="^.alive$")
