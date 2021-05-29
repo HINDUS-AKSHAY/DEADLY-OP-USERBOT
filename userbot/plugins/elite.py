@@ -15,12 +15,12 @@ async def reply_id(event):
 
 DEFAULTUSER = ALIVE_NAME or "Mafia User"
 MAFIA_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝕃𝕖𝕘𝕖𝕟𝕕𝕒𝕣𝕪_𝔸𝔽_𝕄𝕒𝕗𝕚𝕒𝔹𝕠𝕥"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "LEGENDRY_AF_ELITEBOT"
 
 USERID = bot.uid
 
 mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
-
+                         
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -53,8 +53,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="mafia$"))
-@bot.on(sudo_cmd(pattern="mafia$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="elite$"))
+@bot.on(sudo_cmd(pattern="elite$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -65,7 +65,7 @@ async def amireallyalive(alive):
         mafia_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
         mafia_caption += f"__**𝔹𝕆𝕋 𝕊𝕋𝔸𝕋𝕌𝕊**__\n\n"
         mafia_caption += f"**★ 𝕋𝕖𝕝𝕖𝕥𝕙𝕠𝕟 𝕧𝕖𝕣𝕤𝕚𝕠𝕟 :** `1.15.0`\n"
-        mafia_caption += f"**★ 𝕄𝔸𝔽𝕀𝔸𝔹𝕆𝕋 :**`{mafiaversion}`\n"
+        mafia_caption += f"**★ 𝔼𝕃𝕀𝕋𝔼𝕊 𝔹𝕆𝕋 :**`{mafiaversion}`\n"
         mafia_caption += f"**★ 𝕌𝕡𝕥𝕚𝕞𝕖 :** `{uptime}\n`"
         mafia_caption += f"**★ 𝕄𝕒𝕤𝕥𝕖𝕣 :** {mention}\n"
         await alive.client.send_file(
@@ -79,7 +79,7 @@ async def amireallyalive(alive):
             f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
             f"__**𝔹𝕆𝕋 𝕊𝕋𝔸𝕋𝕌𝕊**__\n\n"
             f"**★ 𝕋𝕖𝕝𝕖𝕥𝕙𝕠𝕟 𝕧𝕖𝕣𝕤𝕚𝕠𝕟 :** `1.15.0`\n"
-            f"**★ 𝕄𝔸𝔽𝕀𝔸𝔹𝕆𝕋 :** `{mafiaversion}`\n"
+            f"**★ 𝔼𝕃𝕀𝕋𝔼𝕊 𝔹𝕆𝕋 :** `{mafiaversion}`\n"
             f"**★ 𝕌𝕡𝕥𝕚𝕞𝕖 :** `{uptime}\n`"
             f"**★ 𝕄𝕒𝕤𝕥𝕖𝕣 :** {mention}\n",
         )
