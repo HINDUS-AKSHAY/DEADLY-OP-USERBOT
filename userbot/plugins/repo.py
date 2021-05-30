@@ -1,3 +1,17 @@
+import random
+import re
+import time
+
+import requests
+from cowpy import cow
+from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl.types import MessageEntityMentionName
+
+from userbot.cmdhelp import CmdHelp
+from mafiabot.utils import admin_cmd, sudo_cmd, edit_or_reply
+
+
+
 @bot.on(admin_cmd(pattern=f"repo", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
