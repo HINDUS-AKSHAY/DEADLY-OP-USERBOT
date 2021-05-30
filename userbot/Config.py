@@ -25,7 +25,7 @@ if ENV:
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001462549597))
+        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001374567160))
         # TG API limit. An album can have atmost 10 media!
         FBAN_LOGGER_GROUP = os.environ.get("FBAN_LOGGER_GROUP", None)
         if FBAN_LOGGER_GROUP:
@@ -157,7 +157,7 @@ if ENV:
         FORCE_SUB = os.environ.get("FORCE_SUB", None)
         FORCE_CHANNEL_UN = os.environ.get("FORCE_CHANNEL_UN", None)
         FORCE_CHANNEL_ID = int(os.environ.get("FORCE_CHANNEL_ID", False))
-        EXTRA_MAFIABOT = os.environ.get("EXTRA_MAFIABOT", -1001221881562)
+        EXTRA_MAFIABOT = os.environ.get("EXTRA_MAFIABOT", -1001374567160)
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
 
 else:
