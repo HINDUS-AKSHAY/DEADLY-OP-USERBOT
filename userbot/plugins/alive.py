@@ -36,17 +36,20 @@ edit_time = 5
 file1 = "https://telegra.ph/file/a65900c74cb9a0bd89c11.jpg"
 """ =======================CONSTANTS====================== """
 
-pm_caption = "__                       **😎🔥 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 😎🔥**  __\n\n"
+pm_caption = "__                       **𖣘𖣘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 𖣘𖣘**  __\n\n"
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
-pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
-pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.𝟓\n"
-pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐄𝐋𝐈𝐓𝐄𝐒 𝐎𝐏](https://t.me/elites_network)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/joinchat/0KCyT0MHyAhmMmRl)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/elites_userbot)\n"
-pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](t.me/ELITE_BOY_1)\n" 
-                  
+pm_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
+pm_caption += f"┣•✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
+pm_caption += f"┣•➳➠ 𝑇𝐸𝐿𝐸𝑇𝐻𝑂𝑁         ☞ 𝟏.𝟏𝟕.𝟓\n"
+pm_caption += f"┣•➳➠ 𝑇𝐸𝐴𝑀 𝐺𝑅𝑂𝑈𝑃      ☞ [𝐸𝐿𝐼𝑇𝐸 𝑂𝑃](https://t.me/elites_network)\n"
+pm_caption += f"┣•➳➠ 𝑆𝑈𝑃𝑃𝑂𝑅𝑇 𝐶𝐻𝐴𝑁𝑁𝐸𝐿 ☞ [𝐽𝑂𝐼𝑁](https://t.me/joinchat/0KCyT0MHyAhmMmRl)\n"
+pm_caption += f"┣•➳➠ 𝑆𝑈𝑃𝑃𝑂𝑅𝑇 𝐺𝑅𝑂𝑈𝑃 ☞ [𝐽𝑂𝐼𝑁](https://t.me/elites_userbot)\n"
+pm_caption += f"┣•➳➠ 𝑂𝑊𝑁𝐸𝑅     ☞  [𝐸𝐿𝐼𝑇𝐸 𝐵𝑂𝑌](t.me/D3_krish)\n" 
+pm_caption += f"┣•➳➠ 𝑆𝑈𝑃𝑃𝑂𝑅𝑇𝐸𝑅     ☞ [𝚂𝙰𝙼𝙴𝙴𝚁](t.me/SAMEER_795)\n"
+pm_caption += f"┣•➳➠ 𝑆𝑈𝑃𝑃𝑂𝑅𝑇𝐸𝑅     ☞ [𝙺𝚁𝙸𝚂𝙷](t.me/ELITE_BOY_XD)\n" 
+pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"                   
 pm_caption += " \n"
-pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT)"
+pm_caption += "[𝚁𝙴𝙿𝙾](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT)  𖣘 [𝙻𝙸𝙲𝙴𝙽𝚂𝙴](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT/blob/main/LICENSE)"
 
 
 # @command(outgoing=True, pattern="^.alive$")
