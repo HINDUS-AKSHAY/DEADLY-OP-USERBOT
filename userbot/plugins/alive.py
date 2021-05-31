@@ -33,7 +33,7 @@ mafia = bot.uid
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/a65900c74cb9a0bd89c11.jpg"
+file1 = "https://telegra.ph/file/2e3be6e9a3727b39da4b8.jpg"
 """ =======================CONSTANTS====================== """
 
 pm_caption = "__                       **😎🔥 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 😎🔥**  __\n\n"
