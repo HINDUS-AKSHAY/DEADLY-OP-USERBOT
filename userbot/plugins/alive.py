@@ -44,8 +44,7 @@ pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.�
 pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐄𝐋𝐈𝐓𝐄𝐒 𝐎𝐏](https://t.me/elites_network)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/ELITE_BOT_OFFICIAL)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/ELITEs_userbot)\n"
-pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](t.me/@ELITE_BOY_XD)\n\n" 
-pm_caption += "➾ 𝐅𝐎𝐑 𝐇𝐀𝐓𝐄𝐑𝐒  ➣ [𝐂𝐋𝐈𝐂𝐊 𝐇𝐄𝐑𝐄](https://t.me/joinchat/p6IwtKP0l844YTY1)\n\n" 
+pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](t.me/ELITE_BOY_XD)\n\n" 
 pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT)"
 
 # @command(outgoing=True, pattern="^.alive$")
