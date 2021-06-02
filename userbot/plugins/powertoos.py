@@ -10,12 +10,15 @@ import sys
 import asyncio
 from os import execl
 from time import sleep
+from mafiabot.utils import admin_cmd, sudo_cmd
 
 from mafiabot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from userbot import HEROKU_APP, bot
 
 @bot.on(admin_cmd(pattern="restart"))
+@bot.on(sudo_cmd(pattern="restart$", allow_sudo=True))
+
 async def _(event):
     if event.fwd_from:
         return
@@ -27,6 +30,15 @@ async def _(event):
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
+
+
+ludosudo = Config.SUDO_USERS
+
+if ludosudo:
+    sudou = "True"
+else:
+    sudou = "False"
+
 
 @bot.on(admin_cmd(pattern="shutdown$"))
 async def _(event):
