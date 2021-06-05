@@ -75,7 +75,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@elites_userbot":
+        if event.query.user_id == bot.uid and query == "@SAVAGE_userbot":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
@@ -95,7 +95,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@elites_userbot",
-                text="""**Hey! This is [MafiaBot.](https://t.me/MafiaBot_Support) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [MafiaBot.](https://t.me/SAVAGE_USERBOT) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/SAVAGE_TECHY"),
@@ -120,14 +120,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN ELITE SPAM BOT AND USE. © elitebot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN SAVAGE SPAM BOT AND USE. © SAVAGE™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [ELITES BOT](https://t.me/SAVAGE_USERBOT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [SAVAGE BOT](https://t.me/SAVAGE_USERBOT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -136,10 +136,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
-              "👑 Elites spam bot Menu Provider Is now Closed👑\n\n         **[© elite bot ™](t.me/elites_userbot)**", 5, link_preview=False
+              "👑 SAVAGE spam bot Menu Provider Is now Closed👑\n\n         **[© SAVAGE bot ™](t.me/SAVAGE_userbot)**", 5, link_preview=False
             )
         else:
-            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN ELITES SPAM BOT AND USE. © elites bot™"
+            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN SAVAGE SPAM BOT AND USE. © SAVAGE bot™"
             await event.answer(mafia_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -148,7 +148,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN ELITES SPAM BOT AND USE. © elitebot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN SAVAGE SPAM BOT AND USE. © SAVAGE ™",
                 cache_time=0,
                 alert=True,
             )
@@ -181,7 +181,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN ELITES SPAM BOT AND USE. © Elitebot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN SAVAGE SPAM BOT AND USE. © SAVAGE ™",
                 cache_time=0,
                 alert=True,
             )
