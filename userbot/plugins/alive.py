@@ -33,20 +33,20 @@ mafia = bot.uid
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/2e3be6e9a3727b39da4b8.jpg"
+file1 = "https://telegra.ph/file/d1b44954034aad13e9f14.jpg"
 """ =======================CONSTANTS====================== """
 
-pm_caption = "__                       **😎🔥 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 😎🔥**  __\n\n"
+pm_caption = "__                       **😎🔥 𝐒𝐀𝐕𝐀𝐆𝐄 𝐒𝐏𝐀𝐌 😎🔥**  __\n\n"
 
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
 pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
 pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.𝟓\n"
-pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐄𝐋𝐈𝐓𝐄𝐒 𝐎𝐏](https://t.me/elites_network)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/ELITE_BOT_OFFICIAL)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/ELITEs_userbot)\n"
-pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐄𝐋𝐈𝐓𝐄 𝐁𝐎𝐘⚡](t.me/ELITE_BOY_XD)\n\n" 
-pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐄𝐋𝐈𝐓𝐄𝐒 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/T3AM-ELITES/ELITES-SPAM-USERBOT)"
-
+pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐒𝐀𝐕𝐀𝐆𝐄](https://t.me/savage_team_bolte)\n"
+pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/SAVAGE_TECHY)\n"
+pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/SAVAGE_SPAM_GROUP)\n"
+pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑 𝐎𝐏⚡](t.me/SAMEER_795)\n\n" 
+pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐒𝐀𝐕𝐀𝐆𝐄 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/SAMEERPANTHI/SAVAGE-SPAM-BOT)"
+                
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
 @bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
