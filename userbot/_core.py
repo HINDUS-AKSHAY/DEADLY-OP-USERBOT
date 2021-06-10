@@ -13,7 +13,7 @@ DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "savage User"
 deadly_logo = "https://telegra.ph/file/fbb41395fd0feab088922.jpg"
 h1m4n5hu0p = deadlybot.uid
-mafia = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
+deadly = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
@@ -21,9 +21,9 @@ async def send(event):
     if event.fwd_from:
         return
     message_id = event.message.id
-    thumb = mafia_logo
+    thumb = deadly_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {mafia}\n\n⚡ **[LEGENDARY AF SAVAGE](t.me/SAVAGE_SPAM_GROUP)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {deadly}\n\n⚡ **[LEGENDARY AF SAVAGE](t.me/SAVAGE_SPAM_GROUP)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -71,7 +71,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {mafia}\n\n{string}\n\n        ⚡ **[LEGENDARY AF ELITES BOT](t.me/elites_userbot)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {deadly}\n\n{string}\n\n        ⚡ **[LEGENDARY AF ELITES BOT](t.me/elites_userbot)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)

@@ -68,7 +68,7 @@ def load_module(shortname):
         mod.borg = bot
         mod.deadlybot = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_mafia = delete_mafia
+        mod.delete_deadly = delete_deadly
         mod.media_type = media_type
         # support for deadlybot originals
         sys.modules["deadlybot.utils"] = userbot.utils
@@ -121,12 +121,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                mafiareg = "^" + Config.COMMAND_HAND_LER
+                deadlyreg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                mafiareg = "^\\" + Config.COMMAND_HAND_LER
+                deadlyreg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(mafiareg + pattern)
+            args["pattern"] = re.compile(deadlyreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -186,12 +186,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                mafiareg = "^" + Config.SUDO_COMMAND_HAND_LER
+                deadlyreg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                mafiareg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                deadlyreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(mafiareg + pattern)
+            args["pattern"] = re.compile(deadlyreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -290,13 +290,13 @@ async def edit_or_reply(
     await event.delete()
     os.remove(file_name)
 
-async def delete_mafia(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_deadly(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        mafiaevent = (
+        deadlyevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -304,11 +304,11 @@ async def delete_mafia(event, text, time=None, parse_mode=None, link_preview=Non
             )
         )
     else:
-        mafiaevent = await event.edit(
+        deadlyevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await mafiaevent.delete()
+    return await deadlyevent.delete()
 
 # from paperplaneextended
 on = bot.on

@@ -241,7 +241,7 @@ async def process(msg, user, client, reply, replied=None):
         canvas.paste(top, (pfpbg.width, 0))
         canvas.paste(middle, (pfpbg.width, top.height))
         canvas.paste(bottom, (pfpbg.width, top.height + middle.height))
-        canvas = await mafiadoctype(docname, docsize, doctype, canvas)
+        canvas = await deadlydoctype(docname, docsize, doctype, canvas)
         y = 80 if text else 0
     else:
         canvas.paste(pfpbg, (0, 0))
@@ -372,7 +372,7 @@ async def get_entity(msg):
     return bold, mono, italic, link
 
 
-async def mafiadoctype(name, size, htype, canvas):
+async def deadlydoctype(name, size, htype, canvas):
     font = ImageFont.truetype("./temp/Roboto-Medium.ttf", 38)
     doc = Image.new("RGBA", (130, 130), (29, 29, 29, 255))
     draw = ImageDraw.Draw(doc)

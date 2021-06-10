@@ -7,13 +7,13 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 from userbot import CMD_HELP
-from userbot import ALIVE_NAME, mafiaversion
+from userbot import ALIVE_NAME, deadlyversion
 from deadlybot.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
 
-mafia = bot.uid
+deadly = bot.uid
 
 
 global USER_AFK  # pylint:disable=E0602
@@ -46,7 +46,7 @@ async def set_not_afk(event):
             event.chat_id,
             "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
-            + "`", file=mafiapic
+            + "`", file=deadlypic
         )
         try:
             await borg.send_message(  # pylint:disable=E0602
@@ -96,12 +96,12 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={mafia}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
+            f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={deadly}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
             + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
   if reason
             else f"**Heyy!**\n__I am currently unavailable.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
         )
-        msg = await event.reply(message_to_reply, file=mafiapic)
+        msg = await event.reply(message_to_reply, file=deadlypic)
         await asyncio.sleep(2)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
             await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
@@ -119,7 +119,7 @@ async def _(event):
     global afk_start
     global afk_end
     global reason
-    global mafiapic
+    global deadlypic
     USER_AFK = {}
     afk_time = None
     last_afk_message = {}
@@ -127,26 +127,26 @@ async def _(event):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    mafiapic = await event.client.download_media(h1m4n5hu0p)
+    deadlypic = await event.client.download_media(h1m4n5hu0p)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
             functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
         )
         if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
-        USER_AFK = f"yes: {reason} {mafiapic}"  # pylint:disable=E0602
+        USER_AFK = f"yes: {reason} {deadlypic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
-                event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=mafiapic
+                event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=deadlypic
             )
         else:
-            await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=mafiapic)
+            await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=deadlypic)
         await asyncio.sleep(0.001)
         await event.delete()
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",file=mafiapic
+                f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",file=deadlypic
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602

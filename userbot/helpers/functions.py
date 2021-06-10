@@ -37,17 +37,17 @@ def utc_to_local(utc_datetime):
 
 # gban
 
-async def admin_groups(mafia):
-    mafiagroups = []
-    async for dialog in mafia.client.iter_dialogs():
+async def admin_groups(deadly):
+    deadlygroups = []
+    async for dialog in deadly.client.iter_dialogs():
         entity = dialog.entity
         if (
             isinstance(entity, Channel)
             and entity.megagroup
             and (entity.creator or entity.admin_rights)
         ):
-            mafiagroups.append(entity.id)
-    return mafiagroups
+            deadlygroups.append(entity.id)
+    return deadlygroups
 
 async def take_screen_shot(video_file, output_directory, ttl):
     # https://stackoverflow.com/a/13891070/4723940
@@ -130,10 +130,10 @@ async def make_gif(event, file):
             if response.text.startswith("Send me an animated sticker!"):
                 return "`This file is not supported`"
             response = response if response.media else await conv.get_response()
-            mafiaresponse = response if response.media else await conv.get_response()
+            deadlyresponse = response if response.media else await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
-            mafiafile = await event.client.download_media(mafiaresponse, "./temp")
-            return await unzip(mafiafile)
+            deadlyfile = await event.client.download_media(deadlyresponse, "./temp")
+            return await unzip(deadlyfile)
         except YouBlockedUserError:
             return "Unblock @tgstogifbot"
 
@@ -263,8 +263,8 @@ async def solarize(imagefile, endname):
 async def iphonex(text):
     r = requests.get(f"https://nekobot.xyz/api/imagegen?type=iphonex&url={text}").json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -278,8 +278,8 @@ async def baguette(text):
         f"https://nekobot.xyz/api/imagegen?type=baguette&url={text}"
     ).json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -291,8 +291,8 @@ async def baguette(text):
 async def threats(text):
     r = requests.get(f"https://nekobot.xyz/api/imagegen?type=threats&url={text}").json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -306,8 +306,8 @@ async def threats(text):
 async def lolice(text):
     r = requests.get(f"https://nekobot.xyz/api/imagegen?type=lolice&url={text}").json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -321,8 +321,8 @@ async def lolice(text):
 async def trash(text):
     r = requests.get(f"https://nekobot.xyz/api/imagegen?type=trash&url={text}").json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -336,8 +336,8 @@ async def trash(text):
 async def awooify(text):
     r = requests.get(f"https://nekobot.xyz/api/imagegen?type=awooify&url={text}").json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -353,8 +353,8 @@ async def trap(text1, text2, text3):
         f"https://nekobot.xyz/api/imagegen?type=trap&name={text1}&author={text2}&image={text3}"
     ).json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -370,8 +370,8 @@ async def phcomment(text1, text2, text3):
         f"https://nekobot.xyz/api/imagegen?type=phcomment&image={text1}&text={text2}&username={text3}"
     ).json()
     h1m4n5hu0p = r.get("message")
-    mafiaurl = url(h1m4n5hu0p)
-    if not mafiaurl:
+    deadlyurl = url(h1m4n5hu0p)
+    if not deadlyurl:
         return "check syntax once more"
     with open("temp.png", "wb") as f:
         f.write(requests.get(h1m4n5hu0p).content)
@@ -660,7 +660,7 @@ async def waifutxt(text, chat_id, reply_to_id, bot, borg):
         63,
     ]
     sticcers = await bot.inline_query("stickerizerbot", f"#{choice(animus)}{text}")
-    mafia = await sticcers[0].click("me", hide_via=True)
-    if mafia:
-        await bot.send_file(int(chat_id), mafia, reply_to=reply_to_id)
-        await mafia.delete()
+    deadly = await sticcers[0].click("me", hide_via=True)
+    if deadly:
+        await bot.send_file(int(chat_id), deadly, reply_to=reply_to_id)
+        await deadly.delete()

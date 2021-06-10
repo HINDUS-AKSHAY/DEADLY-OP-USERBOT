@@ -35,16 +35,16 @@ async def spammer(e):
 
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
-async def bigspam(mafia):
-    if not mafia.text[0].isalpha() and mafia.text[0] not in ("/", "#", "@", "!"):
-        mafia_msg = mafia.text
-        deadlybot_count = int(mafia_msg[9:13])
-        mafia_spam = str(mafia.text[13:])
+async def bigspam(deadly):
+    if not deadly.text[0].isalpha() and deadly.text[0] not in ("/", "#", "@", "!"):
+        deadly_msg = deadly.text
+        deadlybot_count = int(deadly_msg[9:13])
+        deadly_spam = str(deadly.text[13:])
         for i in range(1, deadlybot_count):
-            await mafia.respond(mafia_spam)
-        await mafia.delete()
+            await deadly.respond(deadly_spam)
+        await deadly.delete()
         if LOGGER:
-            await mafia.client.send_message(
+            await deadly.client.send_message(
                 LOGGER_GROUP, "#BIGSPAM \n\n" "Bigspam was executed successfully"
             )
 

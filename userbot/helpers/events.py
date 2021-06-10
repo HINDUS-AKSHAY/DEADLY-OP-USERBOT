@@ -2,7 +2,7 @@
 from telethon.tl.types import MessageEntityMentionName
 
 from userbot.Config import Config
-from userbot.utils import delete_mafia
+from userbot.utils import delete_deadly
 
 
 async def reply_id(event):
@@ -14,9 +14,9 @@ async def reply_id(event):
     return reply_to_id
 
 
-async def get_user_from_event(event, mafiaevent=None, secondgroup=None):
-    if mafiaevent is None:
-        mafiaevent = event
+async def get_user_from_event(event, deadlyevent=None, secondgroup=None):
+    if deadlyevent is None:
+        deadlyevent = event
     if secondgroup:
         args = event.pattern_match.group(2).split(" ", 1)
     else:
@@ -25,7 +25,7 @@ async def get_user_from_event(event, mafiaevent=None, secondgroup=None):
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         if previous_message.from_id is None and not event.is_private:
-            await delete_mafia(mafiaevent, "`Well that's an anonymous admin !`")
+            await delete_deadly(deadlyevent, "`Well that's an anonymous admin !`")
             return None, None
         user_obj = await event.client.get_entity(previous_message.sender_id)
         extra = event.pattern_match.group(1)
@@ -36,7 +36,7 @@ async def get_user_from_event(event, mafiaevent=None, secondgroup=None):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await delete_mafia(mafiaevent, "`Pass the user's username, id or reply!`", 5)
+            await delete_deadly(deadlyevent, "`Pass the user's username, id or reply!`", 5)
             return None, None
         if event.message.entities:
             probable_user_mention_entity = event.message.entities[0]
@@ -47,6 +47,6 @@ async def get_user_from_event(event, mafiaevent=None, secondgroup=None):
         try:
             user_obj = await event.client.get_entity(user)
         except (TypeError, ValueError):
-            await delete_mafia(mafiaevent, "`Couldn't fetch user to procced further`", 5)
+            await delete_deadly(deadlyevent, "`Couldn't fetch user to procced further`", 5)
             return None, None
     return user_obj, extra
