@@ -41,7 +41,7 @@ pm_caption = "__                       **😎🔥 𝐒𝐀𝐕𝐀𝐆𝐄 𝐒�
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
 pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
 pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.𝟓\n"
-pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐒𝐀𝐕𝐀𝐆𝐄](https://t.me/savage_team_bolte)\n"
+pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐒𝐀𝐕𝐀𝐆𝐄](https://t.me/deadly_team_bolte)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/SAVAGE_TECHY)\n"
 pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/deadly_userbot)\n"
 pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑 𝐎𝐏⚡](t.me/SAMEER_795)\n\n" 
@@ -67,5 +67,5 @@ async def amireallyalive(alive):
 CmdHelp("alive").add_command(
   "alive", None, "To check am i alive"
 ).add_command(
-  "savage", None, "To check am i alive with your favorite alive pic"
+  "deadly", None, "To check am i alive with your favorite alive pic"
 ).add()

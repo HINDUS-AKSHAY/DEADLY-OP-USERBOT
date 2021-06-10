@@ -10,7 +10,7 @@ from userbot import *
 from userbot import bot as deadlybot
 
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "savage User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
 deadly_logo = "https://telegra.ph/file/fbb41395fd0feab088922.jpg"
 h1m4n5hu0p = deadlybot.uid
 deadly = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
