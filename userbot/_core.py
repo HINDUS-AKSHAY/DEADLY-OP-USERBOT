@@ -11,12 +11,12 @@ from userbot import bot as deadlybot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "savage User"
-mafia_logo = "https://telegra.ph/file/d1b44954034aad13e9f14.jpg"
+deadly_logo = "https://telegra.ph/file/fbb41395fd0feab088922.jpg"
 h1m4n5hu0p = deadlybot.uid
 mafia = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
-@deadlybot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@deadlybot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
