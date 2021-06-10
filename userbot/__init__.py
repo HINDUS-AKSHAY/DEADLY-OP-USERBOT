@@ -9,9 +9,9 @@ from var import Var
 
 
 StartTime = time.time()
-mafiaversion = "2.0.4"
+deadlyversion = "2.0.4"
 botversion = "0.1"
-mafiatelethon = "1.21.1"
+deadlytelethon = "1.21.1"
 
 os.system("pip install aria2p")
 if Var.STRING_SESSION:
@@ -33,7 +33,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-MAFIA_ID = ["1676629806"]
+DEADLY_ID = ["1510841631"]
 
 """ PPE initialization. """
 
@@ -151,7 +151,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/sameerpanthi/SAVAGE-SPAM-BOT.git")
+    "https://github.com/sameerpanthi/DEADLY-OP-BOT.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
