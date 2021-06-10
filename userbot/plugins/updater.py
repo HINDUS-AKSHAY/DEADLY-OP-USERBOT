@@ -5,7 +5,7 @@ import sys
 import git
 
 from userbot.Config import Config
-from mafiabot.utils import admin_cmd, sudo_cmd
+from deadlybot.utils import admin_cmd, sudo_cmd
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (

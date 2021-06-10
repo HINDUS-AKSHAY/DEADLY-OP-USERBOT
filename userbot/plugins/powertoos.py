@@ -10,9 +10,9 @@ import sys
 import asyncio
 from os import execl
 from time import sleep
-from mafiabot.utils import admin_cmd, sudo_cmd
+from deadlybot.utils import admin_cmd, sudo_cmd
 
-from mafiabot.utils import admin_cmd
+from deadlybot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from userbot import HEROKU_APP, bot
 

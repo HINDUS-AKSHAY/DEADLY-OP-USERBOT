@@ -11,9 +11,9 @@ import os
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from mafiabot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from deadlybot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
-from mafiabot.Config import Config
+from deadlybot.Config import Config
 
 LOGGER = Config.PLUGIN_CHANNEL
 SUDO_WALA = Config.SUDO_USERS
@@ -38,9 +38,9 @@ async def spammer(e):
 async def bigspam(mafia):
     if not mafia.text[0].isalpha() and mafia.text[0] not in ("/", "#", "@", "!"):
         mafia_msg = mafia.text
-        mafiabot_count = int(mafia_msg[9:13])
+        deadlybot_count = int(mafia_msg[9:13])
         mafia_spam = str(mafia.text[13:])
-        for i in range(1, mafiabot_count):
+        for i in range(1, deadlybot_count):
             await mafia.respond(mafia_spam)
         await mafia.delete()
         if LOGGER:
@@ -102,5 +102,5 @@ CmdHelp("spam").add_command(
 ).add_command(
   "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", ".dspam 5 100 Hello"
 ).add_command(
-  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what mafiabot iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
+  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what deadlybot iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
 ).add()

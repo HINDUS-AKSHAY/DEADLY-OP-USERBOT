@@ -7,7 +7,7 @@ import requests
 
 from userbot import CMD_HELP
 from userbot.Config import Config
-from mafiabot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from deadlybot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
@@ -22,7 +22,7 @@ HEROKU_API_KEY = Config.HEROKU_API_KEY
 
 Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
-mafia_logo = "./H1M4N5HU0P/mafiabot_logo.jpg"
+mafia_logo = "./H1M4N5HU0P/deadlybot_logo.jpg"
 
 
 @borg.on(

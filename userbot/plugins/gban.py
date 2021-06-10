@@ -1,6 +1,6 @@
 from userbot import bot, CMD_HELP, ALIVE_NAME
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
-from mafiabot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from deadlybot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 import html
 from telethon import events
@@ -64,11 +64,11 @@ async def gban(userbot):
     sender = await ids.get_sender()
     hum = await ids.client.get_me()
     if not sender.id == hum.id:
-        mafiabot = await edit_or_reply(ids, "Trying to gban this retard!")
+        deadlybot = await edit_or_reply(ids, "Trying to gban this retard!")
     else:
-        mafiabot = await edit_or_reply(ids, "`Ok! Gbaning this piece of shit....`")
+        deadlybot = await edit_or_reply(ids, "`Ok! Gbaning this piece of shit....`")
     hum = await userbot.client.get_me()
-    await mafiabot.edit(f"`🔥Global Ban Iz Cumin💦.... Wait and watch nigga🚶`")
+    await deadlybot.edit(f"`🔥Global Ban Iz Cumin💦.... Wait and watch nigga🚶`")
     my_mention = "[{}](tg://user?id={})".format(hum.first_name, hum.id)
     f"@{hum.username}" if hum.username else my_mention
     await userbot.get_chat()
@@ -86,10 +86,10 @@ async def gban(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await mafiabot.edit(f"**Something W3NT Wrong 🤔**")
+        return await deadlybot.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         if user.id == 1676629806 or user.id == 1559064347:
-            return await mafiabot.edit(
+            return await deadlybot.edit(
                 f"`First Grow Some Balls To Gban My Creater and he is your dad🤫🚶`"
             )
         try:
@@ -109,17 +109,17 @@ async def gban(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await mafiabot.edit(f"Gbaning This retard🚶\n\n**Please Wait Few Minutes**😏")
+                await deadlybot.edit(f"Gbaning This retard🚶\n\n**Please Wait Few Minutes**😏")
             except:
                 b += 1
     else:
-        await mafiabot.edit(f"`Either reply to a user or gib me user id/name`")
+        await deadlybot.edit(f"`Either reply to a user or gib me user id/name`")
     try:        
         if gmute(user.id) is False:
-            return await mafiabot.edit(f"**Error! User already gbanned.**")
+            return await deadlybot.edit(f"**Error! User already gbanned.**")
     except:
         pass
-    return await mafiabot.edit(
+    return await deadlybot.edit(
         f"[{user.first_name}](tg://user?id={user.id}) Beta majdur ko khodna aur [{HIMANSHU}](tg://user?id={papa}) ko chodna kabhi sikhana nhi.\n\n**Gban Successful 🔥\nAffected Chats😏 : {a} **"
     )
 
@@ -132,11 +132,11 @@ async def gunban(userbot):
     sender = await ids.get_sender()
     hum = await ids.client.get_me()
     if not sender.id == hum.id:
-        mafiabot = await edit_or_reply(ids, "`Trying to ungban this kid...`")
+        deadlybot = await edit_or_reply(ids, "`Trying to ungban this kid...`")
     else:
-        mafiabot = await edit_or_reply(ids, "`Ungban in progress...`")
+        deadlybot = await edit_or_reply(ids, "`Ungban in progress...`")
     hum = await userbot.client.get_me()
-    await mafiabot.edit(f"`Trying to ungban this kiddo...`")
+    await deadlybot.edit(f"`Trying to ungban this kiddo...`")
     my_mention = "[{}](tg://user?id={})".format(hum.first_name, hum.id)
     f"@{hum.username}" if hum.username else my_mention
     await userbot.get_chat()
@@ -154,10 +154,10 @@ async def gunban(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await mafiabot.edit("**Som3ting W3nt Wr0ng**")
+        return await deadlybot.edit("**Som3ting W3nt Wr0ng**")
     if user:
         if user.id == 1676629806 or user.id == 1559064347:
-            return await mafiabot.edit("**You need to grow some balls to gban / ungban my creator and he is your dad**")
+            return await deadlybot.edit("**You need to grow some balls to gban / ungban my creator and he is your dad**")
         try:
             from userbot.plugins.sql_helper.gmute_sql import ungmute
         except:
@@ -175,17 +175,17 @@ async def gunban(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await mafiabot.edit(f"Ok! Now Ungbaning this kiddo.\n\n**Please Wait Few Minutes**😏")
+                await deadlybot.edit(f"Ok! Now Ungbaning this kiddo.\n\n**Please Wait Few Minutes**😏")
             except:
                 b += 1
     else:
-        await mafiabot.edit("**Reply to a user**")     
+        await deadlybot.edit("**Reply to a user**")     
     try:
         if ungmute(user.id) is False:
-            return await mafiabot.edit("**Error! I think User already ungbanned.**")
+            return await deadlybot.edit("**Error! I think User already ungbanned.**")
     except:
         pass
-    return await mafiabot.edit(
+    return await deadlybot.edit(
         f"**[{user.first_name}](tg://user?id={user.id}) Aur bhai.... Aagya swaad.**\n\nUngban Successful 🔥\nChats :- `{a}`"
     )
 

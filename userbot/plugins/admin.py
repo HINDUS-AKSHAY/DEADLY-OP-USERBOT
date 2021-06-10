@@ -31,7 +31,7 @@ from telethon.tl.types import (
 
 from userbot import *
 from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
-from mafiabot.utils import *
+from deadlybot.utils import *
 from userbot.cmdhelp import CmdHelp
 
 # =================== CONSTANT ===================

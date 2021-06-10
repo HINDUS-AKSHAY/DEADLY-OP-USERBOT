@@ -5,18 +5,18 @@ from pathlib import Path
 from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from mafiabot.utils import *
+from deadlybot.utils import *
 from userbot import *
-from userbot import bot as mafiabot
+from userbot import bot as deadlybot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "savage User"
 mafia_logo = "https://telegra.ph/file/d1b44954034aad13e9f14.jpg"
-h1m4n5hu0p = mafiabot.uid
+h1m4n5hu0p = deadlybot.uid
 mafia = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
-@mafiabot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@mafiabot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
+@deadlybot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
+@deadlybot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
@@ -39,8 +39,8 @@ async def send(event):
     else:
         await edit_or_reply(event, "File not found..... Kek")
 
-@mafiabot.on(admin_cmd(pattern="install$", outgoing=True))
-@mafiabot.on(sudo_cmd(pattern="install$", allow_sudo=True))
+@deadlybot.on(admin_cmd(pattern="install$", outgoing=True))
+@deadlybot.on(sudo_cmd(pattern="install$", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
@@ -80,8 +80,8 @@ async def install(event):
             await event.edit(f"**Failed to Install** \n`Error`\n{str(e)}")
             return os.remove(downloaded_file_name)
     
-@mafiabot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
-@mafiabot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
+@deadlybot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
+@deadlybot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
 async def uninstall(h1m4n5hu0p):
     if h1m4n5hu0p.fwd_from:
         return
@@ -94,8 +94,8 @@ async def uninstall(h1m4n5hu0p):
     except OSError as e:
         await h1m4n5hu0p.edit("Error: %s : %s" % (dir_path, e.strerror))
 
-@mafiabot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
-@mafiabot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
+@deadlybot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
+@deadlybot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
 async def unload(event):
     if event.fwd_from:
         return
@@ -111,8 +111,8 @@ async def unload(event):
         )
 
 
-@mafiabot.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
-@mafiabot.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
+@deadlybot.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
+@deadlybot.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
 async def load(event):
     if event.fwd_from:
         return
@@ -140,5 +140,5 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in mafiabot."
+  "cmds", None, "Gives out the list of modules in deadlybot."
 ).add()

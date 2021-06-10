@@ -1,7 +1,7 @@
 import time
 
 from userbot import ALIVE_NAME, StartTime, mafiaversion
-from mafiabot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 async def reply_id(event):

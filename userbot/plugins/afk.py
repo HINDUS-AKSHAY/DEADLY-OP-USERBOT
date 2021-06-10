@@ -8,7 +8,7 @@ from telethon import events
 from telethon.tl import functions, types
 from userbot import CMD_HELP
 from userbot import ALIVE_NAME, mafiaversion
-from mafiabot.utils import admin_cmd, edit_or_reply
+from deadlybot.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
@@ -42,7 +42,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        mafiabot = await borg.send_message(
+        deadlybot = await borg.send_message(
             event.chat_id,
             "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
@@ -65,7 +65,7 @@ async def set_not_afk(event):
                 silent=True,
             )
         await asyncio.sleep(5)
-        await mafiabot.delete()
+        await deadlybot.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
