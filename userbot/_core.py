@@ -23,7 +23,7 @@ async def send(event):
     message_id = event.message.id
     thumb = deadly_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {deadly}\n\n⚡ **[LEGENDARY AF SAVAGE](t.me/SAVAGE_SPAM_GROUP)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {deadly}\n\n⚡ **[LEGENDARY AF SAVAGE](t.me/deadly_userbot)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
