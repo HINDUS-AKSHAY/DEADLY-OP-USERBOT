@@ -15,13 +15,13 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
-BOT_IS_UP_TO_DATE = "**The ELITES BOT** is up-to-date sur."
+BOT_IS_UP_TO_DATE = "**The DeadlyBot** is up-to-date sur."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
     "updating your DeadlyBot BOT ..."
 )
-NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your ELITES BOT...`"
+NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your DeadlyBot...`"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
