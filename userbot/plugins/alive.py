@@ -3,7 +3,7 @@
 # animation Idea by @NOOB_GUY_OP (Sipakisking) && @Hell boy_pikachu
 # Made by @ROMANTIC_KILLER...and thanks to @Crackexy for the logos...
 # Kang with credits else gay...
-# Porting in Mafia Userbot by @H1M4N5HU0P
+# Porting in Mafia Userbot by @OPSAMEER
 
 import asyncio
 import random
