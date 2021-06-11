@@ -1,6 +1,6 @@
 import asyncio
 from collections import deque
-from deadlbot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from deadlboty.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 
