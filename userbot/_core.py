@@ -82,17 +82,17 @@ async def install(event):
     
 @deadlybot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
 @deadlybot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
-async def uninstall(h1m4n5hu0p):
-    if h1m4n5hu0p.fwd_from:
+async def uninstall(opsameer):
+    if opsameer.fwd_from:
         return
-    shortname = h1m4n5hu0p.pattern_match["shortname"]
+    shortname = opsameer.pattern_match["shortname"]
     dir_path =f"./userbot/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
-        await h1m4n5hu0p.edit(f"Uninstalled `{shortname}` successfully")
+        await opsameer.edit(f"Uninstalled `{shortname}` successfully")
     except OSError as e:
-        await h1m4n5hu0p.edit("Error: %s : %s" % (dir_path, e.strerror))
+        await opsameer.edit("Error: %s : %s" % (dir_path, e.strerror))
 
 @deadlybot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
 @deadlybot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))

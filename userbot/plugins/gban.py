@@ -193,29 +193,29 @@ async def gunban(userbot):
 
 
 @borg.on(events.ChatAction)
-async def handler(h1m4n5hu0p): 
-   if h1m4n5hu0p.user_joined or h1m4n5hu0p.user_added:      
+async def handler(opsameer): 
+   if opsameer.user_joined or opsameer.user_added:      
        try:       	
          from userbot.plugins.sql_helper.gmute_sql import is_gmuted
-         guser = await h1m4n5hu0p.get_user()      
+         guser = await opsameer.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      
           return
        if gmuted:
         for i in gmuted:
             if i.sender == str(guser.id):                                                                         
-                chat = await h1m4n5hu0p.get_chat()
+                chat = await opsameer.get_chat()
                 admin = chat.admin_rights
                 creator = chat.creator   
                 if admin or creator:
                  try:
-                    await client.edit_permissions(h1m4n5hu0p.chat_id, guser.id, view_messages=False)                              
-                    await h1m4n5hu0p.reply(
+                    await client.edit_permissions(opsameer.chat_id, guser.id, view_messages=False)                              
+                    await opsameer.reply(
                      f"⚠️⚠️**Warning**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n"                      
                      f"**⚜️ Victim Id ⚜️**:\n[{guser.id}](tg://user?id={guser.id})\n"                   
                      f"**🔥 Action 🔥**  :\n`Banned this piece of shit....` **AGAIN!**")                                                
                  except:       
-                    h1m4n5hu0p.reply("`Shit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
+                    opsameer.reply("`Shit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
                     return
                   
                   

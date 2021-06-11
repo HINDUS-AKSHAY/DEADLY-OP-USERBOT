@@ -25,7 +25,7 @@ DEADLYPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-h1m4n5hu0p = (
+opsameer = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
@@ -35,7 +35,7 @@ USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth yo
 USER_BOT_NO_WARN = (
     "Hello, This is **DEADLY BOT Ultra Private Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{h1m4n5hu0p}**\n\n"
+    f"\n**{opsameer}**\n\n"
     "To start a valid conversation\n⚔️Register Your Request!⚔️\nSend `/start` To Register Your Request\nHopefully u will get a reply⚜️"
 )
 
