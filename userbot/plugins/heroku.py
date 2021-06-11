@@ -187,7 +187,7 @@ async def _(dyno):
         thumb = deadly_logo
     except:
         return await dyno.reply(
-            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/MafiaBot_Chit_Chat)"
+            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/deadly_userbot)"
         )
     deadly_data = app.get_log()
     deadly_key = (
