@@ -118,7 +118,6 @@ async def set_group_photo(gpic):
                 f"CHAT: {gpic.chat.title}(`{gpic.chat_id}`)",
             )
 
-
 @bot.on(admin_cmd("promote(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="promote(?: |$)(.*)", allow_sudo=True))
 @errors_handler
@@ -139,17 +138,17 @@ async def promote(promt):
         delete_messages=True,
         pin_messages=True,
     )
-    deadlyevent = await edit_or_reply(promt, "Promoting...")
+    dealybotevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "??????"
+        rank = "Deadly User" 
     if not user:
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await deadlyevent.edit("Promoted Successfully!")
+        await savagebotevent.edit("Hɴ Kʀ Dɪʏᴀ Pʀᴏᴍᴏᴛᴇ..Cʜʟ ᴀʙ Dᴀᴀʀᴜ Pɪʟᴡᴀ😂😉")
     except BadRequestError:
-        await deadlyevent.edit(NO_PERM)
+        await deadlybotevent.edit(NO_PERM)
         return
     if BOTLOG:
         await promt.client.send_message(
@@ -173,7 +172,7 @@ async def demote(dmod):
         await edit_or_reply(dmod, NO_ADMIN)
         return
     deadlyevent = await edit_or_reply(dmod, "Demoting...")
-    rank = "??????"
+    rank = "Deadly User"
     user = await get_user_from_event(dmod)
     user = user[0]
     if not user:
@@ -191,8 +190,8 @@ async def demote(dmod):
     except BadRequestError:
         await deadlyevent.edit(NO_PERM)
         return
-    await deadlyevent.edit("Demoted Successfully!")
-    if BOTLOG:
+    await deadlyevent.edit("Yʀ Tᴜᴍʜᴀʀɪ Iᴊᴊᴀᴛ! Nʜɪ Hᴇ Is Gʀᴘ Mᴇɪɴ Aᴅᴍɪɴ Bᴀɴɴᴇ Kɪ 😌👊")
+    if BOTLOG:              
         await dmod.client.send_message(
             BOTLOG_CHATID,
             "#DEMOTE\n"
@@ -350,7 +349,7 @@ async def kick(usr):
         return
     if reason:
         await deadlyevent.edit(
-            f"Kicked [{user.first_name}](tg://user?id={user.id})!\nReason: {reason}"
+            f"Nikl la*de!\nReason: {reason}"
         )
     else:
         await deadlyevent.edit(f"Kicked [{user.first_name}](tg://user?id={user.id})!")
