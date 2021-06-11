@@ -50,7 +50,7 @@ def add_to_broadcastlist(keywoard, group_id):
 
 def rm_from_broadcastlist(keywoard, group_id):
     with deadlyBROADCAST_INSERTION_LOCK:
-        broadcast_group = SESSION.query(MafiaBroadcast).get((keywoard, str(group_id)))
+        broadcast_group = SESSION.query(deadlyBroadcast).get((keywoard, str(group_id)))
         if broadcast_group:
             if str(group_id) in BROADCAST_SQL_.BROADCAST_CHANNELS.get(keywoard, set()):
                 BROADCAST_SQL_.BROADCAST_CHANNELS.get(keywoard, set()).remove(
