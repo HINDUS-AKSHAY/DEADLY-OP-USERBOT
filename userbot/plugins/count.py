@@ -78,7 +78,7 @@ async def stats(
     response += f"🔹 𝙰𝙳𝙼𝙸𝙽 𝚁𝙸𝙶𝙷𝚃𝚂: {admin_in_broadcast_channels - creator_in_channels} \n"
     response += f"🔸 𝚄𝙽𝚁𝙴𝙰𝙳: {unread} \n"
     response += f"🔹 𝚄𝙽𝚁𝙴𝙰𝙳 𝙼𝙴𝙽𝚃𝙸𝙾𝙽𝚂: {unread_mentions} \n"
-    response += f"🔸 __𝙸𝚃 𝚃𝙾𝙾𝙺:__ {stop_time:.02f}𝚂 \n\n"
+    response += f"🔸 𝙸𝚃 𝚃𝙾𝙾𝙺: {stop_time:.02f}𝚂 \n\n"
     response += (
         f"📌𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙾𝙵 :- [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃](https://t.me/DEADLY_userbot)"
     )
