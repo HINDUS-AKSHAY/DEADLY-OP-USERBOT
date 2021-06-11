@@ -67,11 +67,11 @@ async def get_user_from_id(user, event):
     return user_obj
 @borg.on(admin_cmd(pattern="gpromote ?(.*)"))
 async def gben(userbot):
-    mb = mafia = userbot
+    mb = deadly = userbot
     i = 0
     sender = await mb.get_sender()
     me = await userbot.client.get_me()
-    await mafia.edit("`promoting...`")
+    await deadly.edit("`promoting...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -85,13 +85,13 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await mafia.edit("U want to promote urself 😑😑 waao..")
+       k = await deadly.edit("U want to promote urself 😑😑 waao..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await mafia.edit(f"**Something W3NT Wrong 🤔**")
+        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
@@ -107,21 +107,21 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await mafia.edit(f"**Promoted in Chats **: `{i}`")
+             await deadly.edit(f"**Promoted in Chats **: `{i}`")
           except:
              pass
     else:
-        await mafia.edit(f"**Reply to a user you dumbo !!**")
-    return await mafia.edit(
+        await deadly.edit(f"**Reply to a user you dumbo !!**")
+    return await deadly.edit(
         f"**Globally promoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
     )
 @borg.on(admin_cmd(pattern="gdemote ?(.*)"))
 async def gben(userbot):
-    mb = mafia = userbot
+    mb = deadly = userbot
     i = 0
     sender = await mb.get_sender()
     me = await userbot.client.get_me()
-    await mafia.edit("`demoting...`")
+    await deadly.edit("`demoting...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -135,13 +135,13 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await mafia.edit("U want to demote urself 😑😑 waao..")
+       k = await deadly.edit("U want to demote urself 😑😑 waao..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await mafia.edit(f"**Something W3NT Wrong 🤔**")
+        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
@@ -157,12 +157,12 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await mafia.edit(f"**Demoted in Chats **: `{i}`")
+             await deadly.edit(f"**Demoted in Chats **: `{i}`")
           except:
              pass
     else:
-        await mafia.edit(f"**Reply to a user you dumbo !!**")
-    return await mafia.edit(
+        await deadly.edit(f"**Reply to a user you dumbo !!**")
+    return await deadly.edit(
         f"**Globally Demoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
     )
 
