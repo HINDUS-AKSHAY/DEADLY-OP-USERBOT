@@ -64,7 +64,7 @@ async def stats(
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"🔰 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 🔰\n\n"
+    response = f"🔰 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵  {full_name} 🔰\n\n"
     response += f"🔹 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝚃𝚂: {private_chats} \n"
     response += f"🔸 𝚄𝚂𝙴𝚁𝚂: {private_chats - bots}  \n"
     response += f"🔹 𝙱𝙾𝚃𝚂: {bots}  \n"
