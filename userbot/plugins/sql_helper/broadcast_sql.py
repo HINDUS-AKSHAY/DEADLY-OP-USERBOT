@@ -75,7 +75,7 @@ def del_keyword_broadcastlist(keywoard):
     with deadlyBROADCAST_INSERTION_LOCK:
         broadcast_group = (
             SESSION.query(deadlyBroadcast.keywoard)
-            .filter(MafiaBroadcast.keywoard == keywoard)
+            .filter(deadlyBroadcast.keywoard == keywoard)
             .delete()
         )
         BROADCAST_SQL_.BROADCAST_CHANNELS.pop(keywoard)
