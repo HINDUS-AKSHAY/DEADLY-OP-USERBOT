@@ -13,6 +13,12 @@ import time
 from userbot import ALIVE_NAME, StartTime, deadlyversion
 from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
+ludosudo = Config.SUDO_USERS
+
+if ludosudo:
+    sudou = "True"
+else:
+    sudou = "False"
 
 async def reply_id(event):
     reply_to_id = None
