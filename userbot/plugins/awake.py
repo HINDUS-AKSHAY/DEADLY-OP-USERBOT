@@ -71,7 +71,8 @@ async def amireallyalive(alive):
     reply_to_id = await reply_id(alive)
 
     if DEADLY_IMG:
-                        
+        deadly_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
+        deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"                
         deadly_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
         deadly_caption += f"┣•➳➠ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `{version.__version__}` \n"
         deadly_caption += f"┣•➳➠ `𝚅𝙴𝚁𝚂𝙸𝙾𝙽:` `{deadlyversion}`\n"
