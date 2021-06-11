@@ -63,7 +63,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running Elite Bot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running Deadly Bot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -78,17 +78,17 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@elites_userbot",
-                text="""**Hey! This is [MafiaBot.](https://t.me/SAVAGE_USERBOT) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [DeadlyBot.](https://t.me/Deadly_USERBOT) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/SAVAGE_TECHY"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/SAVAGE_TEAM_BOLTE"
+                            "⚡ GROUP ⚡", "https://t.me/deadly_fighters"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/sameerpanthi/elitebot"),
+                            "✨ REPO ✨", "https://github.com/sameerpanthi/deadly-op-bot"),
                         custom.Button.url
                     (
                             "🔰 OWNER 🔰", "https://t.me/SAMEER_795" 
