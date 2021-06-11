@@ -1,11 +1,3 @@
-# Originally made by @rekcah for @javes05
-# porting to hellbot by @kraken_the_badass...
-# i asked rekcah before porting...not like other kangers....
-# keep credit if u wanna kang...
-# Now in MafiaBot
-# else u are a gay...no doubt in that....
-
-# --------------------------------------------------------------------------------------------------------------------------------
 
 from telethon.errors import (
     ChannelInvalidError,
@@ -86,7 +78,7 @@ async def get_users(event):
         try:
             if error.startswith("Too"):
                 return await deadly.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+                    f"**Tᴇʀᴍɪɴᴀʟ Fɪɴɪsʜᴇᴅ Wɪᴛʜ Eʀʀᴏʀ Bᴄᴏᴢ Aᴀᴘᴋᴀ Aᴄᴄᴏᴜɴᴛ Lɪᴍɪᴛᴇᴅ Hᴇ\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
