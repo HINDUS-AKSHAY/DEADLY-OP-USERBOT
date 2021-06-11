@@ -614,7 +614,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "[Cʟɪᴄᴋ Hᴇʀᴇ](https://github.com/sameerPanthi/Deadly-op-bot) Tᴏ Oᴘᴇɴ Tʜɪs\n🔥**Lit AF!!**🔥 DᴇᴀᴅʟʏBᴏᴛ Rᴇᴘᴏ.\n[𝚃𝙴𝙰𝙼 𝙳𝙴𝙰𝙳𝙻𝚈 𝙵𝙸𝙶𝙷𝚃𝙴𝚁𝚂](t.ME/DEADLY_FIGHTERS)")
+        await edit_or_reply(e, "[𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴](https://github.com/sameerPanthi/Deadly-op-bot) 𝚃𝙾 𝙾𝙿𝙴𝙽 𝚃𝙷𝙸𝚂 \n🔥**𝙻𝙸𝚃 𝙰𝙵!!**🔥 𝙳𝙴𝙰𝙳𝙻𝚈𝙱𝙾𝚃.\n\n[👑 𝙳𝙴𝙰𝙳𝙻𝚈 𝙵𝙸𝙶𝙷𝚃𝙴𝚁𝚂 👑](t.ME/DEADLY_FIGHTERS)")
 
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
