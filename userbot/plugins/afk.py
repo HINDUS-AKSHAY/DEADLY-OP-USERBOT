@@ -1,5 +1,4 @@
-# by uniborg...Thanks @spechide
-# Now will be used in MafialBot too....
+
 import asyncio
 import datetime
 from datetime import datetime
@@ -11,7 +10,7 @@ from userbot import ALIVE_NAME, deadlyversion
 from deadlybot.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DeadlyBot User"
 
 deadly = bot.uid
 
