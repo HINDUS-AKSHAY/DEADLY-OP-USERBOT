@@ -5,7 +5,7 @@ import sys
 import git
 
 from userbot.Config import Config
-from deadlybot.utils import admin_cmd, sudo_cmd
+from savagebot.utils import admin_cmd, sudo_cmd
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
@@ -15,13 +15,13 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
-BOT_IS_UP_TO_DATE = "**The DeadlyBot** is up-to-date sur."
+BOT_IS_UP_TO_DATE = "**𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓** is up-to-date sur."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "updating your DeadlyBot BOT ..."
+    "Uᴘᴅᴀᴛɪɴɢ Yᴏᴜʀ 𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓 ..."
 )
-NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your DeadlyBot...`"
+NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your 𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓...`"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
@@ -137,9 +137,8 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Uᴘᴅᴀᴛᴇᴅ Yᴏᴜʀ Deadly Bᴏᴛ Is Sᴜᴄᴄᴇssғᴜʟʟʏ. Aғᴛᴇʀ 5-7 Mɪɴᴜᴛᴇs Tʏᴘᴇ (.ping or .alive) Tᴏ Cʜᴇᴄᴋ I ᴀᴍ Aʟɪᴠᴇ Oʀ ɴᴏᴛ🚶😏"
-    )
+        "Hɴ Kʀ Dɪʏᴀ Uᴘᴅᴀᴛᴇ Aʙ 5-10 Mɪɴᴛ Bᴀᴀᴅ .ᴀʟɪᴠᴇ ᴏʀ .ᴘɪɴɢ Kʀᴋᴇ Cʜᴇᴄᴋ Kʀɴᴀ Bᴏᴛ ᴜPᴅᴀᴛᴇ Hᴜᴀ Yᴀ Nʜɪ..Aɢʀ Nʜɪ Hᴏ Tᴏʜ CᴏɴTᴀᴄᴛ - [support](t.me/deadly_userbot)"
+    )                  
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
-  
