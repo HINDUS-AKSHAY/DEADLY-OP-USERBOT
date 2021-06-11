@@ -205,7 +205,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[elites bot]Current Approved PMs",
+                    caption="[Deadly bot]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()
