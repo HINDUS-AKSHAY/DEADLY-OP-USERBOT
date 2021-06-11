@@ -28,8 +28,8 @@ deadly = bot.uid
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/fbb41395fd0feab088922.jpg"
-file2 = "https://telegra.ph/file/46c68096ae54ebd061859.jpg"
+file1 = "https://telegra.ph/file/d26df5a0e2e9f0f6a3493.jpg"
+file2 = "https://telegra.ph/file/0389a53d540f315af0946.jpg"
 """ =======================CONSTANTS====================== """
 
 pm_caption = "__                       **😎🔥 #ᗪᗴᗩᗪᒪY_Oᑎ_ᖴIᖇᗴ 😎🔥**  __\n\n"
