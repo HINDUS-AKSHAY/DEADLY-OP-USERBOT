@@ -40,7 +40,7 @@ pm_caption += "➳➠ TᗴᒪᗴTᕼOᑎ ➣ 𝟏.𝟏𝟕.𝟓\n"
 pm_caption += "➳➠ Tᗴᗩᗰ ᘜᖇOᑌᑭ ➣ [𝐃𝐄𝐀𝐃𝐋𝐘](https://t.me/deadly_fighters)\n"
 pm_caption += "➳➠ ՏᑌᑭᑭOᖇT ᑕᕼᗩᑎᑎᗴᒪ ➣ [𝐉𝐎𝐈𝐍](https://t.me/DEADLY_TECHY)\n"
 pm_caption += "➳➠ ՏᑌᑭᑭOᖇT ᘜᖇOᑌᑭ ➣ [𝐉𝐎𝐈𝐍](https://t.me/deadly_userbot)\n"
-pm_caption += "➳➠ ᑕᖇᗴᗩTOᖇ  ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑⚡](t.me/OFFICIAL_SAMEER)\n\n" 
+pm_caption += "➳➠ ᑕᖇᗴᗩTOᖇ  ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑⚡](t.me/sameer_795)\n\n" 
 pm_caption += "[✨ᗪᗴᑭᒪOY YOᑌᖇ Oᗯᑎ ᗷOT✨](https://github.com/SAMEERPANTHI/DEADLY-OP-BOT)"
                 
 # @command(outgoing=True, pattern="^.alive$")
