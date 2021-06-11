@@ -145,7 +145,7 @@ async def _(event):
 
 import asyncio
 
-from savagebot.utils import admin_cmd
+from deadlybot.utils import admin_cmd
 
 
 @bot.on(admin_cmd(pattern=f"lovestory", outgoing=True))
