@@ -68,4 +68,4 @@ RUN mkdir /root/userbot/bin/
 WORKDIR /root/userbot/
 RUN chmod +x /usr/local/bin/*
 RUN pip3 install -r requirements.txt
-CMD ["bash","./OPSAMEER/start.sh"
+CMD ["bash","./OPSAMEER/start.sh"]
