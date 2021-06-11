@@ -137,7 +137,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Hɴ Kʀ Dɪʏᴀ Uᴘᴅᴀᴛᴇ Aʙ 5-10 Mɪɴᴛ Bᴀᴀᴅ .ᴀʟɪᴠᴇ ᴏʀ .ᴘɪɴɢ Kʀᴋᴇ Cʜᴇᴄᴋ Kʀɴᴀ Bᴏᴛ ᴜPᴅᴀᴛᴇ Hᴜᴀ Yᴀ Nʜɪ..Aɢʀ Nʜɪ Hᴏ Tᴏʜ CᴏɴTᴀᴄᴛ - [support](t.me/deadly_userbot)"
+        "Hɴ Kʀ Dɪʏᴀ Uᴘᴅᴀᴛᴇ Aʙ 5-10 Mɪɴᴛ Bᴀᴀᴅ (`.alive` or `.ping`) Kʀᴋᴇ Cʜᴇᴄᴋ Kʀɴᴀ Bᴏᴛ ᴜPᴅᴀᴛᴇ Hᴜᴀ Yᴀ Nʜɪ..Aɢʀ Nʜɪ Hᴏ Tᴏʜ CᴏɴTᴀᴄᴛ - [Sᴜᴘᴘᴏʀᴛ](t.me/deadly_userbot)"
     )                  
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
