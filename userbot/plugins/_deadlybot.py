@@ -1,4 +1,4 @@
-"""elites Help Command"""
+"""deadly Help Command"""
 
 from userbot import *
 from userbot import CMD_HELP
