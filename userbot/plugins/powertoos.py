@@ -17,20 +17,25 @@ from userbot.cmdhelp import CmdHelp
 from userbot import HEROKU_APP, bot
 
 @bot.on(admin_cmd(pattern="restart"))
-@bot.on(sudo_cmd(pattern="restart$", allow_sudo=True))
-
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Restarting **[ ░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ █░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ ██░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ ███ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ░░░░░░░░░░░]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ █░░░░░░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ██░░░░░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ███░░░░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ████░░░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ █████░░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ██████░░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ███████░░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ████████░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ █████████░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ██████████░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarting **[ ███████████ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarted **[ ✓ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-
 
 ludosudo = Config.SUDO_USERS
 
