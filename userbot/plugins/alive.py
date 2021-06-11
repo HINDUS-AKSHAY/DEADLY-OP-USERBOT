@@ -1,9 +1,11 @@
-
-# Thanks to Sipak bro and Aryan.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking) && @Hell boy_pikachu
-# Made by @ROMANTIC_KILLER...and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
-# Porting in Mafia Userbot by @OPSAMEER
+# for Deadly Bot
+# ONLY for DeadlyBot
+# EDITED BY - @SAMEER_795 (SAMEER)
+# KANGERS STAY AWAY
+# JISNE KANG KIYA USKI MA CHOD DI JAYEGI
+# BHADWE KANG MT KR LENA ...
+# TERI MA KI CHUT KANGER
+# CHL AGAR KANG HI KRNA HE TO CREDIT KE SATH KR
 
 import asyncio
 import random
@@ -13,14 +15,7 @@ from deadlybot.utils import admin_cmd, sudo_cmd
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot.cmdhelp import CmdHelp
 
-# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "SAVAGE BOT"
-
-# Thanks to Sipak bro and Raganork.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking)
-# Made by @ROMANTIC_KILLER...and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
-
 
 ludosudo = Config.SUDO_USERS
 
@@ -33,19 +28,20 @@ deadly = bot.uid
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/d1b44954034aad13e9f14.jpg"
+file1 = "https://telegra.ph/file/fbb41395fd0feab088922.jpg"
+file3 = "https://telegra.ph/file/46c68096ae54ebd061859.jpg"
 """ =======================CONSTANTS====================== """
 
-pm_caption = "__                       **😎🔥 𝐒𝐀𝐕𝐀𝐆𝐄 𝐒𝐏𝐀𝐌 😎🔥**  __\n\n"
+pm_caption = "__                       **😎🔥 #ᗪᗴᗩᗪᒪY_Oᑎ_ᖴIᖇᗴ 😎🔥**  __\n\n"
 
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
-pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
-pm_caption += "➾ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍         ➣ 𝟏.𝟏𝟕.𝟓\n"
-pm_caption += "➾ 𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏      ➣ [𝐒𝐀𝐕𝐀𝐆𝐄](https://t.me/deadly_team_bolte)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐍𝐍𝐋 ➣ [𝐉𝐎𝐈𝐍](https://t.me/SAVAGE_TECHY)\n"
-pm_caption += "➾ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 ➣ [𝐉𝐎𝐈𝐍](https://t.me/deadly_userbot)\n"
-pm_caption += "➾ 𝐎𝐖𝐍𝐄𝐑     ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑 𝐎𝐏⚡](t.me/SAMEER_795)\n\n" 
-pm_caption += "[✨𝐃𝐄𝐏𝐋𝐎𝐘 𝐒𝐀𝐕𝐀𝐆𝐄 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓✨](https://github.com/SAMEERPANTHI/SAVAGE-SPAM-BOT)"
+pm_caption += "✘ ᗩᗷOᑌT ᗰY ՏYՏTᗴᗰ ✘\n\n"
+pm_caption += "➾ TᗴᒪᗴTᕼOᑎ       ➣ 𝟏.𝟏𝟕.𝟓\n"
+pm_caption += "➾ Tᗴᗩᗰ ᘜᖇOᑌᑭ    ➣ [Dᴇᴀᴅʟʏ Fɪɢʜᴛᴇʀs](https://t.me/deadly_team_bolte)\n"
+pm_caption += "➾ ՏᑌᑭᑭOᖇT ᑕᕼᗩᑎᑎᗴᒪ ➣ [Jᴏɪɴ](https://t.me/DEADLY_TECHY)\n"
+pm_caption += "➾ ՏᑌᑭᑭOᖇT ᘜᖇOᑌᑭ ➣ [Jᴏɪɴ](https://t.me/deadly_userbot)\n"
+pm_caption += "➾ ᑕᖇᗴᗩTOᖇ     ➣ [⚡Dᴇᴀᴅʟʏ Sᴀᴍᴇᴇʀ⚡](t.me/OFFICIAL_SAMEER)\n\n" 
+pm_caption += "[✨ᗪᗴᑭᒪOY YOᑌᖇ Oᗯᑎ ᗷOT✨](https://github.com/SAMEERPANTHI/DEADLY-OP-BOT)"
                 
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
