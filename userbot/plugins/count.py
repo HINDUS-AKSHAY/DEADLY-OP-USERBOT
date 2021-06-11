@@ -64,7 +64,7 @@ async def stats(
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"🔰𝚂𝚃𝙰𝚃𝚂 𝙵𝙾𝚁 {full_name}🔰\n\n"
+    response = f"🔰 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝙼𝚈 [𝙼𝙰𝚂𝚃𝙴𝚁]({DEFAULTUSER})🔰\n\n"
     response += f"🔹 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝚃𝚂: {private_chats} \n"
     response += f"🔸 𝚄𝚂𝙴𝚁𝚂: {private_chats - bots}  \n"
     response += f"🔹 𝙱𝙾𝚃𝚂: {bots}  \n"
@@ -78,7 +78,7 @@ async def stats(
     response += f"🔹 𝙰𝙳𝙼𝙸𝙽 𝚁𝙸𝙶𝙷𝚃𝚂: {admin_in_broadcast_channels - creator_in_channels} \n"
     response += f"🔸 𝚄𝙽𝚁𝙴𝙰𝙳: {unread} \n"
     response += f"🔹 𝚄𝙽𝚁𝙴𝙰𝙳 𝙼𝙴𝙽𝚃𝙸𝙾𝙽𝚂: {unread_mentions} \n"
-    response += f"🔸 __𝙸𝚃 𝚃𝙾𝙾𝙺:__ {stop_time:.02f}𝚂 \n"
+    response += f"🔸 __𝙸𝚃 𝚃𝙾𝙾𝙺:__ {stop_time:.02f}𝚂 \n\n"
     response += (
         f"📌𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙾𝙵 :- [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃](https://t.me/DEADLY_userbot)"
     )
