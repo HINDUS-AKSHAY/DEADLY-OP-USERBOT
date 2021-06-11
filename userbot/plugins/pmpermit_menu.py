@@ -1,4 +1,3 @@
-# if you change credits, you get anal cancer and get murdered by russians in 3 days.
 """
 Support chatbox for pmpermit.
 Used by incoming messages with trigger as /start
@@ -11,7 +10,7 @@ from telethon import functions
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Dedly User"
 PREV_REPLY_MESSAGE = {}
 
 
