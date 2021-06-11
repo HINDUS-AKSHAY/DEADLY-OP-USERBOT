@@ -80,12 +80,12 @@ async def amireallyalive(alive):
         deadly_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"                
         deadly_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
-        deadly_caption += f"┣•➳➠ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `1.21.2` \n"
-        deadly_caption += f"┣•➳➠ `𝚅𝙴𝚁𝚂𝙸𝙾𝙽:` `{deadlyversion}`\n"
-        deadly_caption += f"┣•➳➠ `𝚂𝚄𝙳𝙾:` `{sudou}`\n"
-        deadly_caption += f"┣•➳➠ `𝙲𝙷𝙰𝙽𝙽𝙴𝙻:` [ᴊᴏɪɴ](https://t.me/deadly_techy)\n"
-        deadly_caption += f"┣•➳➠ `𝙶𝚁𝙾𝚄𝙿:` [ᴊᴏɪɴ](https://t.me/deadly_userbot)\n"
-        deadly_caption += f"┣•➳➠ `𝚄𝙿𝚃𝙸𝙼𝙴:`{uptime}\n`"
+        deadly_caption += f"┣•➳➠ `Tᴇʟᴇᴛʜᴏɴ:` `1.21.2` \n"
+        deadly_caption += f"┣•➳➠ `Vᴇʀsɪᴏɴ:` `{deadlyversion}`\n"
+        deadly_caption += f"┣•➳➠ `Sᴜᴅᴏ:` `{sudou}`\n"
+        deadly_caption += f"┣•➳➠ `Cʜᴀɴɴᴇʟ:` [Jᴏɪɴ](https://t.me/deadly_techy)\n"
+        deadly_caption += f"┣•➳➠ `Gʀᴏᴜᴘ:` [Jᴏɪɴ](https://t.me/deadly_userbot)\n"
+        deadly_caption += f"┣•➳➠ `Uᴘᴛɪᴍᴇ:`{uptime}`\n"
         deadly_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
         await alive.client.send_file(
             alive.chat_id, DEADLY_IMG, caption=deadly_caption, reply_to=reply_to_id
