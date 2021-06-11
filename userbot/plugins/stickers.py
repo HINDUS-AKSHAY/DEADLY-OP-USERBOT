@@ -13,7 +13,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-#from userbot import CMD_HELP
+from userbot import CMD_HELP
 from userbot.Config import Config
 from deadlybot.utils import *
 from userbot.cmdhelp import CmdHelp
@@ -99,11 +99,11 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_elitebot_{pack}"
+        packname = f"HB_{user.username}_DeadlyBot_{pack}"
         packnick = (
             f"{deadlybot} Vol.{pack}"
             if deadlybot
-            else f"@{user.username}'s_elite_bot Vol.{pack}"
+            else f"@{user.username}'s_DedlyBor_Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -139,7 +139,7 @@ async def kang(args):
                     packnick = (
                         f"{deadlybot} Vol.{pack}"
                         if deadlybot
-                        else f"@{user.username}'s elite_bot Vol.{pack}"
+                        else f"@{user.username}'s_Deadly_bot_Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
