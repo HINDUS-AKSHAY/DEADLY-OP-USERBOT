@@ -8,8 +8,8 @@ class Development(Config):
   API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 
   # the name to display in your alive message.
-  # If not filled anything then default value is Mafia User.
-  ALIVE_NAME = "Mafia User"
+  # If not filled anything then default value is Deadly User.
+  ALIVE_NAME = "Deadly User"
 
   # create any PostgreSQL database.
   # I recommend to use elephantsql and paste that link here
