@@ -3,7 +3,7 @@ import asyncio
 from collections import deque
 
 from userbot import CMD_HELP
-from savagebot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 
