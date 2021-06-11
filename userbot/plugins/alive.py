@@ -15,7 +15,7 @@ from deadlybot.utils import admin_cmd, sudo_cmd
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "SAVAGE BOT"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly Bot"
 
 ludosudo = Config.SUDO_USERS
 
