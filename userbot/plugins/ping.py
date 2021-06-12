@@ -9,8 +9,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly User"
 opsameer = borg.uid
 
 
-@bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"2ping$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"2ping$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -68,7 +68,7 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█▄\n\n👑 𝙿𝙸𝙽𝙶: {ms}\n**👑 𝙼𝙰𝚂𝚃𝙴𝚁:** [{DEFAULTUSER}](tg://user?id={opsameer})"
+        f"█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄\n\n👑 𝙿𝙸𝙽𝙶: {ms}\n**👑 𝙼𝙰𝚂𝚃𝙴𝚁:** [{DEFAULTUSER}](tg://user?id={opsameer})"
     )
     
 
