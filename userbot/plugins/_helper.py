@@ -9,12 +9,12 @@ from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
-async def yardim(event):
+async def info(event):
     if event.fwd_from:
         return
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
-    if tgbotusername is not None or mafia_input == "text":
+    if tgbotusername is not None or deadly_input == "text":
         results = await event.client.inline_query(tgbotusername, "@deadly_sameer_bot")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
