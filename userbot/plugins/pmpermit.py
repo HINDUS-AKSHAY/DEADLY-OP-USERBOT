@@ -33,9 +33,9 @@ opsameer = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly user"
 USER_BOT_WARN_ZERO = "hey nub nibba don't spam here .. oh u want to spam here ? Then I am going to block u nibba**\n__Now GTFO, my master is busy__"
 USER_BOT_NO_WARN = (
-    "⚠️ 𝐇𝐄𝐋𝐋𝐎, 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓 𝐔𝐋𝐓𝐑𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐏𝐑𝐎𝐓𝐎𝐂𝐎𝐎𝐋 ⚠️**\n"
+    "⚠️ 𝐇𝐄𝐋𝐋𝐎, 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐃𝐄𝐀𝐃𝐋𝐘 𝐁𝐎𝐓 𝐔𝐋𝐓𝐑𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐏𝐑𝐎𝐓𝐎𝐂𝐎𝐎𝐋 ⚠️\n"
     f"\n{opsameer}\n\n"
-    "To start a valid conversation\n🔸Register Your Request!🔹\n🔸Send `/start` To Register🔹\n🔸Hopefully u will get a reply🔹"
+    "To start a valid conversation\n\n🔸Register Your Request!🔹\n🔸Send `/start` To Register🔹\n🔸Hopefully u will get a reply🔹"
 )
               
 if Var.PRIVATE_GROUP_ID is not None:
