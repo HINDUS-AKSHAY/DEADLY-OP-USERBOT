@@ -1,4 +1,3 @@
-
 from math import ceil
 from re import compile
 import asyncio
@@ -205,5 +204,3 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             ],
             link_preview=False,
         )
-
-
