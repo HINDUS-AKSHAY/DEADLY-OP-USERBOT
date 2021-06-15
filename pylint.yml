@@ -28,9 +28,9 @@ jobs:
           black .
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'fixes by Javes786'
+          commit_message: 'fixes by gandu pylint'
           commit_options: '--no-verify'
           repository: .
           commit_user_name: Javes786
           commit_user_email: Javesuserbot786@gmail.com
-          commit_author: Javes786 <Javesuserbot786.com>
+          commit_author: Javes786 <Javesuserbot786@gmail.com>
