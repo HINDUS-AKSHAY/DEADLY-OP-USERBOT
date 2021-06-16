@@ -1,4 +1,5 @@
 
+
 from math import ceil
 from re import compile
 import asyncio
@@ -12,13 +13,13 @@ from userbot.cmdhelp import *
 from deadlybot.utils import *
 from userbot.Config import Config
 
-deadlyrow = Config.BUTTONS_IN_HELP
-deadly_emoji = Config.EMOJI_IN_HELP
+mafia_row = Config.BUTTONS_IN_HELP
+mafia_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# DeadlyBot
+# MafiaBot
 
 def button(page, modules):
-    Row = deadly_row
+    Row = mafia_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
@@ -31,7 +32,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{deadly_emoji} " + pair, data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{mafia_emoji} " + pair, data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -39,18 +40,18 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏴᎪᏟᏦ {deadly_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏴᎪᏟᏦ {mafia_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{deadly_emoji} ❌ {deadly_emoji}•", data="close"
+               f"•{mafia_emoji} ❌ {mafia_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{deadly_emoji} ΝᎬХͲ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{mafia_emoji} ΝᎬХͲ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in deadlyBot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in MafiaBot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -59,12 +60,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@deadly_userbot":
+        if event.query.user_id == bot.uid and query == "@MafiaBot_Support":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running DeadlyBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running MafiaBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -78,21 +79,21 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         elif event.text=='':
             result = builder.article(
-                "@deadly_userbot",
-                text="""**Hey! This is [DeadlyBot](https://t.me/Deadly_userbot) \nYou can know more about me from the links given below 👇**""",
+                "@MafiaBot_Support",
+                text="""**Hey! This is [MafiaBot.](https://t.me/MafiaBot_Support) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Deadly_techy"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/MafiaBot_Support"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/Deadly_userbot"
+                            "⚡ GROUP ⚡", "https://t.me/MafiaBot_Chit_Chat"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/sameerpanthi/DEADLY-OP-BOT"),
+                            "✨ REPO ✨", "https://github.com/H1M4N5HU0P/MAFIA-BOT"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://github.com/sameerpanthi/DEADLY-OP-BOT"
+                            "🔰 TUTORIAL 🔰", "https://youtu.be/aRFWP4_RCaE"
                     )
                     ],
                 ],
@@ -104,14 +105,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN Deadlybot AND USE. © deadlyBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [DeadlyBot](https://t.me/Deadly_userbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [MafiaBot](https://t.me/MafiaBot_Support) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -119,12 +120,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_Deadly(event,
-              "👑deadlybot Menu Provider Is now Closed👑\n\n         **[© DeadlyBot ™](t.me/Deadly_Userbot)**", 5, link_preview=False
+            await delete_mafia(event,
+              "👑MafiaBot Menu Provider Is now Closed👑\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**", 5, link_preview=False
             )
         else:
-            deadly_alert = "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © deadlybot ™"
-            await event.answer(deadly_alert, cache_time=0, alert=True)
+            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™"
+            await event.answer(mafia_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
@@ -132,7 +133,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © deadlyBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
                 cache_time=0,
                 alert=True,
             )
@@ -165,7 +166,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © DeadlyBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
                 cache_time=0,
                 alert=True,
             )
