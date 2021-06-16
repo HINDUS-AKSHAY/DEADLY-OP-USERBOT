@@ -100,7 +100,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.answer([result] if result else None)
 
 @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
-    async def page(event):
+        async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
                 "HELLO THERE. PLEASE MAKE YOUR OWN Deadlybot AND USE. © deadlyBot ™",
