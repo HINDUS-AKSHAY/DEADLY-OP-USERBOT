@@ -95,8 +95,8 @@ async def info(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await event.edit(str(CMD_HELP[args]))
-1        else:
+            await event.edit(str(CMD_HELP[args])
+    else:
             event = await event.edit("Please specify a valid plugin name.")
             await asyncio.sleep(4)
             await event.delete()
