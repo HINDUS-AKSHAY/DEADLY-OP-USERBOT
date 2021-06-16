@@ -102,16 +102,16 @@ async def info(event):
             await asyncio.sleep(4)
             await event.delete()
     else:
-        string = "<b>Please specify which plugin do you want help for !!\
+        string = "<b>⚠️ kam plugins he but jitne he ab kaam ke he ⚠️ !!\
             \nNumber of plugins : </b><code>{count}</code>\
             \n<b>Usage : </b><code>.chk</code> <plugin name>\n\n"
-        catcount = 0
+        deadlycount = 0
         for i in sorted(CMD_HELP):
             string += "• " + f"<code>{str(i)}</code>"
             string += "   "
-            catcount += 1
+            deadlycount += 1
        
-            await event.edit(string.format(count=catcount), parse_mode="HTML")
+            await event.edit(string.format(count=deadlycount), parse_mode="HTML")
 
 
 '''@borg.on(admin_cmd(pattern="dc$"))
