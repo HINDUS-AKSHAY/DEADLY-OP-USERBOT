@@ -11,6 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Noob"
 HELPTYPE=False
 
 
+
 @borg.on(admin_cmd(outgoing=True, pattern="help ?(.*)"))
 async def cmd_list(event):
     global HELPTYPE
@@ -95,8 +96,8 @@ async def info(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await event.edit(str(CMD_HELP[args])
-    else:
+            await event.edit(str(CMD_HELP[args]))
+        else:
             event = await event.edit("Please specify a valid plugin name.")
             await asyncio.sleep(4)
             await event.delete()
