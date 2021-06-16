@@ -119,7 +119,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_Deadlu(event,
+            await delete_Deadly(event,
               "👑deadlybot Menu Provider Is now Closed👑\n\n         **[© DeadlyBot ™](t.me/Deadly_Userbot)**", 5, link_preview=False
             )
         else:
