@@ -15,7 +15,7 @@ async def yardim(event):
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
     if tgbotusername is not None or mafia_input == "text":
-        results = await event.client.inline_query(tgbotusername, "@MafiaBot_Support")
+        results = await event.client.inline_query(tgbotusername, "http://t.me/Deadly_sameer_bot")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
@@ -40,7 +40,7 @@ async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "Total {count} commands found in {plugincount} sudo plugins of MafiaBot\n\n"
+            "Total {count} commands found in {plugincount} sudo plugins of DeadlyBot\n\n"
         )
         mafiacount = 0
         plugincount = 0
@@ -63,7 +63,7 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the MafiaBot are [here]({url})"
+            reply_text = f"All commands of the DeadlyBot are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(
