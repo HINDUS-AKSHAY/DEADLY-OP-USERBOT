@@ -12,10 +12,10 @@ from userbot.cmdhelp import *
 from deadlybot.utils import *
 from userbot.Config import Config
 
-mafia_row = Config.BUTTONS_IN_HELP
-mafia_emoji = Config.EMOJI_IN_HELP
+deadlyrow = Config.BUTTONS_IN_HELP
+deadly_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# MafiaBot
+# DeadlyBot
 
 def button(page, modules):
     Row = deadly_row
