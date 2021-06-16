@@ -95,4 +95,4 @@ async def info(event):
             string += "≈ " + f"<code>{str(i)}</code>"
             string += " "
             deadlycount += 1
-        await event.reply(string.format(count=mafiacount), parse_mode="HTML")
+        await event.reply(string.format(count=deadlycount), parse_mode="HTML")
