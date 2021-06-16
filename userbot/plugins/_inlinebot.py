@@ -1,5 +1,3 @@
-
-
 from math import ceil
 from re import compile
 import asyncio
@@ -15,8 +13,6 @@ from userbot.Config import Config
 
 deadlyrow = Config.BUTTONS_IN_HELP
 deadly_emoji = Config.EMOJI_IN_HELP
-# thats how a lazy guy imports
-# DeadlyBot
 
 def button(page, modules):
     Row = deadly_row
@@ -120,7 +116,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_Deadly(event,
+            await delete_deadly(event,
               "👑deadlybot Menu Provider Is now Closed👑\n\n         [© DeadlyBot ™](t.me/Deadly_Userbot)", 5, link_preview=False
             )
         else:
