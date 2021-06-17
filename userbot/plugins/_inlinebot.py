@@ -69,7 +69,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             part = query.split(" ")
             result = builder.article(
                 "File uploaded",
-                text=f"**File uploaded successfully to {part[0]} site.\n\nUpload Time : {part[1][:3]} second\n[‏‏‎ ‎]({part[0]})",
+                text=f"**File uploaded successfully",
                 buttons=[[custom.Button.url("URL", part[0])]],
                 link_preview=True,
             )
