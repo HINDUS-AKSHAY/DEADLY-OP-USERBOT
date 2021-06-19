@@ -4,15 +4,15 @@ from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from deadlybot import bot, CmdHelp
 from deadlybot.utils import admin_cmd, edit_or_reply as eor, sudo_cmd
 
-@bot.on(admin_cmd(pattern="history ?(.*)"))
-@bot.on(sudo_cmd(pattern="history ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="nhistory ?(.*)"))
+@bot.on(sudo_cmd(pattern="nhistory ?(.*)", allow_sudo=True))
 async def _(deadlybotevent):
     if deadlybotevent.fwd_from:
         return 
     if not deadlybotevent.reply_to_msg_id:
        await eor(deadlybotevent, "`Please Reply To A User To Get This Module Work`")
        return
-    reply_message = await savagebotevent.get_reply_message() 
+    reply_message = await deadlybotevent.get_reply_message() 
     chat = "Sangmatainfo_bot"
     victim = reply_message.sender.id
     if reply_message.sender.bot:
@@ -71,7 +71,7 @@ async def _(deadlybotevent):
              await deadlybotevent.client.send_message(savagebotevent.chat_id, response3.message)
 
 CmdHelp("history").add_command(
-  "history", "<reply to a user>", "Fetches the name history of replied user."
+  "nhistory", "<reply to a user>", "Fetches the name history of replied user."
 ).add_command(
   "uhistory", "<reply to user>", "Fetches the Username History of replied users."
 ).add()
