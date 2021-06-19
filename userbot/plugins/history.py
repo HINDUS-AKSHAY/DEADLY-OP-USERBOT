@@ -35,7 +35,7 @@ async def _(deadlybotevent):
              await eor(deadlybotevent, "User never changed his Username...")
           else: 
              await deadlybotevent.delete()
-             await deadlybotevent.client.send_message(savagebotevent.chat_id, response2.message
+             await deadlybotevent.client.send_message(savagebotevent.chat_id, response2.message)
 
 @bot.on(admin_cmd(pattern="unh ?(.*)"))
 @bot.on(sudo_cmd(pattern="unh ?(.*)", allow_sudo=True))
