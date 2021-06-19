@@ -35,7 +35,7 @@ async def _(deadlybotevent):
              await eor(deadlybotevent, "User never changed his Username...")
           else: 
              await deadlybotevent.delete()
-             await deadlybotevent.client.send_message(savagebotevent.chat_id, response2.message)
+             await deadlybotevent.client.send_message(deadlybotevent.chat_id, response2.message)
 
 @bot.on(admin_cmd(pattern="uhistory ?(.*)"))
 @bot.on(sudo_cmd(pattern="uhistory ?(.*)", allow_sudo=True))
@@ -68,7 +68,7 @@ async def _(deadlybotevent):
              await eor(deadlybotevent, "User never changed his Username...")
           else: 
              await deadlybotevent.delete()
-             await deadlybotevent.client.send_message(savagebotevent.chat_id, response3.message)
+             await deadlybotevent.client.send_message(deadlybotevent.chat_id, response3.message)
 
 CmdHelp("history").add_command(
   "nhistory", "<reply to a user>", "Fetches the name history of replied user."
