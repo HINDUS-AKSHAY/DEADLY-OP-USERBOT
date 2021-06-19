@@ -65,7 +65,7 @@ async def stats(
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
     response = f"🔰 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵  {full_name} 🔰\n\n"
-    response += f"┏━━━━━━━━✧❅✦❅✧━━━━━━━━━"
+    response += f"┏━━━━━━━━✧❅✦❅✧━━━━━━━━\n" 
     response += f"┣🔹 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝚃𝚂: {private_chats} \n"
     response += f"┣🔸 𝚄𝚂𝙴𝚁𝚂: {private_chats - bots}  \n"
     response += f"┣🔹 𝙱𝙾𝚃𝚂: {bots}  \n"
@@ -79,8 +79,8 @@ async def stats(
     response += f"┣🔹 𝙰𝙳𝙼𝙸𝙽 𝚁𝙸𝙶𝙷𝚃𝚂: {admin_in_broadcast_channels - creator_in_channels} \n"
     response += f"┣🔸 𝚄𝙽𝚁𝙴𝙰𝙳: {unread} \n"
     response += f"┣🔹 𝚄𝙽𝚁𝙴𝙰𝙳 𝙼𝙴𝙽𝚃𝙸𝙾𝙽𝚂: {unread_mentions} \n"
-    response += f"┣🔸 𝙸𝚃 𝚃𝙾𝙾𝙺: {stop_time:.02f}𝚂 \n\n"
-    response += f"┗━━━━━━━━✧❅✦❅✧━━━━━━━━━\n\n"
+    response += f"┣🔸 𝙸𝚃 𝚃𝙾𝙾𝙺: {stop_time:.02f}𝚂 \n"
+    response += f"┗━━━━━━━━✧❅✦❅✧━━━━━━━━\n\n"
 
     response += (
         f"📌 𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙾𝙵 :-\n[👑 𝙻𝙴𝙶𝙴𝙽𝙳𝚁𝚈 𝙰𝙵 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃 👑](t.me/deadly_userbot)\n\n" 
