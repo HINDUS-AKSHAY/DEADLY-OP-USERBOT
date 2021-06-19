@@ -37,8 +37,8 @@ async def _(deadlybotevent):
              await deadlybotevent.delete()
              await deadlybotevent.client.send_message(savagebotevent.chat_id, response2.message)
 
-@bot.on(admin_cmd(pattern="unh ?(.*)"))
-@bot.on(sudo_cmd(pattern="unh ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="uhistory ?(.*)"))
+@bot.on(sudo_cmd(pattern="uhistory ?(.*)", allow_sudo=True))
 async def _(deadlybotevent):
     if deadlybotevent.fwd_from:
         return 
@@ -73,5 +73,5 @@ async def _(deadlybotevent):
 CmdHelp("history").add_command(
   "history", "<reply to a user>", "Fetches the name history of replied user."
 ).add_command(
-  "unh", "<reply to user>", "Fetches the Username History of replied users."
+  "uhistory", "<reply to user>", "Fetches the Username History of replied users."
 ).add()
