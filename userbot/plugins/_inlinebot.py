@@ -36,13 +36,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏴᎪᏟᏦ {deadly_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"☜︎︎︎ 𝙱𝙰𝙲𝙺༆", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{deadly_emoji} ❌ {deadly_emoji}•", data="close"
+               f"༒︎ 𝙲𝙻𝙾𝚂𝙴 ༒︎", data="close"
             ),
             custom.Button.inline(
-               f"{deadly_emoji} ΝᎬХͲ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"༆𝙽𝙴𝚇𝚃 ☞︎︎︎", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -61,7 +61,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running DeadlyBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ__ :`{len(CMD_HELP)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -101,14 +101,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © DeadlyBot ™",
+                "Hᴇʏ Tʜᴇʀᴇ Pʟᴇᴀsᴇ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ ..Dᴏɴᴛ Usᴇ Mɪɴᴇ.ʟ © DeadlyBot ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [DeadlyBot](https://t.me/deadly_userbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Lᴇɢᴇɴᴅʀʏ Aғ** [DᴇᴀᴅʟʏBᴏᴛ](https://t.me/deadly_userbot) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ:** `{len(CMD_HELP)}`\n**Pᴀɢᴇ:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -117,19 +117,19 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_deadly(event,
-              "👑DeadlyBot Menu Provider Is now Closed👑\n\n         **[© DeadlyBot ™](t.me/DEADLY_USERBOT)**", 5, link_preview=False
+              "DᴇᴀᴅʟʏBᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ\n\n         **[© DᴇᴀᴅʟʏBᴏᴛ ™](t.me/DEADLY_USERBOT)**", 5, link_preview=False
             )
         else:
-            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © Deadlyabot ™"
+            mafia_alert = "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. © DeadlyBot ™"
             await event.answer(mafia_alert, cache_time=0, alert=True)
-          
+                            
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
     )
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © DeadlyBot ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. © DeadlyBot ™",
                 cache_time=0,
                 alert=True,
             )
@@ -162,7 +162,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DEADLYBOT AND USE. © DeadlyBot ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. © DeadlyBot ™",
                 cache_time=0,
                 alert=True,
             )
@@ -195,11 +195,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result += f"**💬 Explanation:** `{command['usage']}`\n"
             result += f"**⌨️ For Example:** `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
-
+            
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"Information[{page}]({cmd})")
+                custom.Button.inline("☜︎︎︎ 𝙱𝙰𝙲𝙺༆", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
