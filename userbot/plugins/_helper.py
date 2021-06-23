@@ -7,16 +7,15 @@ from telethon import functions
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
-    if tgbotusername is not None or deadly_input == "text":
-        results = await event.client.inline_query(tgbotusername, "@DEADLY_USERBOT")
-        await results[8].click(
+    if tgbotusername is not None or mafia_input == "text":
+        results = await event.client.inline_query(tgbotusername, "@MafiaBot_Support")
+        await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
         await event.delete()
@@ -31,7 +30,6 @@ async def yardim(event):
           await event.edit(string)
         else:
           await event.edit(input_str + " is not a valid plugin!")
-
 
 @bot.on(sudo_cmd(allow_sudo=True, pattern="help ?(.*)"))
 async def info(event):
