@@ -2,6 +2,7 @@ import asyncio
 import random
 from deadlybot.utils import admin_cmd
 from . import deadlydef
+from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 que = {}
 
