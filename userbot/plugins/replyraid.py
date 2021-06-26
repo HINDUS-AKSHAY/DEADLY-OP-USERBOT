@@ -1,6 +1,5 @@
 import asyncio
 import random
-from deadlybot.utils import ADMIN_CMD
 from . import deadlydef
 from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
