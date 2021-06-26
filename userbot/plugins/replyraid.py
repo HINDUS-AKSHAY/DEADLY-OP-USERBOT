@@ -83,7 +83,7 @@ async def _(event):
         await event.edit(f"Reply Raid has been De-activated on {username}")
 
 
-CmdHelp.update(
+CmdHelp("replyraid").add_command(
     {
         "spam": "**Plugin : **`replyraid`\
         \n\n**  •  Syntax : **`.replyraid <username>`\
@@ -91,5 +91,5 @@ CmdHelp.update(
         \n\n**  •  Syntax : **`.dreplyraid <username>`\
         \n**  •  Function : **__ Deactivates the reply raid. __\
         \n\n\n**Note : Spam at your own risk !!**"
-    }
+    } 
 )
