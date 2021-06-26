@@ -84,12 +84,9 @@ async def _(event):
 
 
 CmdHelp("replyraid").add_command(
-    {
-        "spam": "**Plugin : **`replyraid`\
-        \n\n**  •  Syntax : **`.replyraid <username>`\
-        \n**  •  Function : **__ Replies the user globally on every chat with random abuses. __\
-        \n\n**  •  Syntax : **`.dreplyraid <username>`\
-        \n**  •  Function : **__ Deactivates the reply raid. __\
-        \n\n\n**Note : Spam at your own risk !!**"
-    } 
-)
+  'replyraid', '.replyraid <username>', 'reply that person with abuse and mention'
+).add_command(
+  'dreplyraid', '.dreplyraid, 'stop replyraid🤓'
+).add_command(
+  'bc', None, 'or kya chaiye bc teko itna kuch to diya'
+).add()
