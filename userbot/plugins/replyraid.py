@@ -2,6 +2,7 @@ import asyncio
 import random
 from . import deadlydef
 from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.cmdhelp import CmdHelp
 
 que = {}
 
@@ -82,7 +83,7 @@ async def _(event):
         await event.edit(f"Reply Raid has been De-activated on {username}")
 
 
-CMD_HELP.update(
+CmdHelp.update(
     {
         "spam": "**Plugin : **`replyraid`\
         \n\n**  •  Syntax : **`.replyraid <username>`\
