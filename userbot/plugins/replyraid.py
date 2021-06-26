@@ -1,6 +1,6 @@
 import asyncio
 import random
-
+from deadlybot.utils import admin_cmd
 from . import deadlydef
 
 que = {}
