@@ -7,8 +7,8 @@ from deadlybot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot import bot as mafiabot
 
 
-@bot.on(admin_cmd(pattern=r"unpack", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"unpack"))
+@bot.on(admin_cmd(pattern=r"open", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"open"))
 async def _(event):
     b = await event.client.download_media(await event.get_reply_message())
     a = open(b, "r")
@@ -23,8 +23,8 @@ async def _(event):
     os.remove(b)
 
 
-@bot.on(admin_cmd(pattern="repack ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="repack ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="zip ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="zip ?(.*)", allow_sudo=True))
 async def _(event):
     a = await event.get_reply_message()
     input_str = event.pattern_match.group(1)
