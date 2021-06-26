@@ -86,7 +86,7 @@ async def _(event):
 CmdHelp("replyraid").add_command(
   'replyraid', '.replyraid <username>', 'reply that person with abuse and mention'
 ).add_command(
-  'dreplyraid', '.dreplyraid, 'stop replyraid🤓'
+  'dreplyraid', '.dreplyraid', 'stop replyraid🤓'
 ).add_command(
   'bc', None, 'or kya chaiye bc teko itna kuch to diya'
 ).add()
