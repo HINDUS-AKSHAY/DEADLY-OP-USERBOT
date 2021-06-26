@@ -1,3 +1,4 @@
+from . import memeshelper as deadlymemes
 from userbot import *
 from userbot.utils import *
 from userbot.Config import Config
