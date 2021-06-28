@@ -9,7 +9,7 @@ from . import *
 
 
 DEADLY_NAME = str(ALIVE_NAME) if ALIVE_NAME else "DEADLY User"
-lg_id = Config.PRIVATE_GROUP_ID
+lg_id = Config.PM_PERMIT_GROUP_ID
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
