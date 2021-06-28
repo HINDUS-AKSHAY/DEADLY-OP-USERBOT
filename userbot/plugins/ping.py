@@ -5,9 +5,6 @@ from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from ..cmdhelp import CmdHelp
 
-uptime = get_readable_time((time.time() - StartTime))
-
-
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly User"
 opsameer = borg.uid
 
@@ -71,7 +68,7 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█  ▄\n\n ✘ ριиg: {ms}\n✘ υρтιмє: {uptime} \n**✘ 𝙼𝙰𝚂𝚃𝙴𝚁:** [{DEFAULTUSER}](tg://user?id={opsameer})"
+        f"█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█  ▄\n\n ✘ ριиg: {ms}\n✘ υρтιмє: {Starttime} \n**✘ 𝙼𝙰𝚂𝚃𝙴𝚁:** [{DEFAULTUSER}](tg://user?id={opsameer})"
     )
     
 
