@@ -37,7 +37,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-telename = Kanged pack
+telename = "Kanged pack"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
