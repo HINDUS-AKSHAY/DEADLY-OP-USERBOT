@@ -20,8 +20,8 @@ auth_url = r["auth_url"]
 async def _(event):
     if event.fwd_from:
         return
-    if Config.LOGGER_ID is None:
-        await eod(event, "You need to setup `LOGGER_ID` to use telegraph...", 7)
+    if Config.PLUGIN_CHANNEL is None:
+        await eod(event, "You need to setup `PLUGIN_CHANNEL` to use telegraph...", 7)
         return
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
