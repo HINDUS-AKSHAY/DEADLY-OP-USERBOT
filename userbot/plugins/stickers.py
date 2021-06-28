@@ -38,7 +38,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-telename = "Kanged pack"
+telename = "DeadlyBot"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
@@ -106,7 +106,7 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"a{user.id}_by_TB_{pack}"
+        packname = f"a{user.id}_by_DeadlyBot_{pack}"
         packnick = (
             f"{telename} Vol.{pack}"
             if telename
@@ -146,7 +146,7 @@ async def kang(args):
                     packnick = (
                         f"{telename} Vol.{pack}"
                         if telename
-                        else f"@{user.username}'s Lion Vol.{pack}"
+                        else f"@{user.username}'s Deadly Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
@@ -265,8 +265,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"`Sticker kanged successfully!`\
-            \nPack can be found [here](t.me/addstickers/{packname})",
+            f"`LE TERA STICKER IS [PACK](t.me/addstickers/{packname}) MEIN DAAL DIYA..ENJOY KR 😂🔥",
             parse_mode="md",
         )
 
