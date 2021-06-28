@@ -83,7 +83,7 @@ async def _(event):
         return
     hunter = event.pattern_match.group(1)
     if not hunter:
-        return await eod(event, "Need a Channel Username Or Channel ID 🥴")
+        return await edit_or_delete(event, "Need a Channel Username Or Channel ID 🥴")
     if hunter.startswith("@"):
         ch = hunter
     else:
@@ -94,7 +94,7 @@ async def _(event):
     try:
         hunter = (await bot.get_entity(ch)).id
     except BaseException:
-        return await eod(event, "⚠️ **Error !** \n\nChannel ID invalid. Please Recheck It !")
+        return await edit_or_delete(event, "⚠️ **Error !** \n\nChannel ID invalid. Please Recheck It !")
     if not str(hunter).startswith("-100"):
         hunter = int("-100" + str(hunter))
     add_fsub(event.chat_id, hunter)
