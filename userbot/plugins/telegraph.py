@@ -52,7 +52,7 @@ async def _(event):
                 end = datetime.datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await eor(event, 
+                await edit_or_reply(event, 
                    "✓ **File uploaded to [telegraph](https://telegra.ph{})** \n✓ **Time Taken :-** `{}` secs \n✓ **By :- {}**".format(
                         media_urls[0], (ms + ms_two), hell_mention,
                     ),
