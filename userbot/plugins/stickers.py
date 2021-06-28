@@ -296,8 +296,8 @@ async def resize_photo(photo):
     return image
 
 
-@Lion.on(admin_cmd(outgoing=True, pattern="stkrinfo"))
-@Lion.on(sudo_cmd(pattern="stkrinfo", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="stkrinfo"))
+@bot.on(sudo_cmd(pattern="stkrinfo", allow_sudo=True))
 # @register(outgoing=True, pattern="^.stkrinfo$")
 async def get_pack_info(event):
     if not event.is_reply:
