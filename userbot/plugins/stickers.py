@@ -20,7 +20,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from useebot.utils import admin_cmd, sudo_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 from userbot import bot
 from userbot.Config import Config
 
