@@ -8,7 +8,7 @@ from . import *
 
 
 
-HELL_NAME = Config.YOUR_NAME or "deadly op"
+DEADLY_NAME = str(ALIVE_NAME) if ALIVE_NAME else "DEADLY User"
 lg_id = Config.LOGGER_ID
 
 telegraph = Telegraph()
