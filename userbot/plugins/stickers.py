@@ -20,7 +20,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import CMD_HELP, bot
+from userbot import bot
 from userbot.Config import Var
 
 KANGING_STR = [
