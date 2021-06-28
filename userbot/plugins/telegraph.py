@@ -8,7 +8,7 @@ from . import *
 
 
 
-DEADLY_NAME = str(ALIVE_NAME) if ALIVE_NAME else "DEADLY User"
+opsameer = str(ALIVE_NAME) if ALIVE_NAME else "Deadly Bot"
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
@@ -82,7 +82,7 @@ async def _(event):
             ms = (end - start).seconds
             hellboy = f"https://telegra.ph/{response['path']}"
             await edit_or_reply(event, 
-                  f"✓ **Pasted to** [telegraph]({DEFAULTUSER}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :**  {Deadly_name}", link_preview=True)
+                  f"✓ **Pasted to** [telegraph]({opsameer}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :**  {Deadly_name}", link_preview=True)
     else:
         await eod(event, 
             "Reply to a message to get a permanent telegra.ph link."
