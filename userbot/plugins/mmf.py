@@ -10,8 +10,8 @@ from var import Var
 client = borg
 
 
-@bot.on(admin_cmd(pattern="memify ?(.*)"))
-@bot.on(sudo_cmd(pattern="memify ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="mmf ?(.*)"))
+@bot.on(sudo_cmd(pattern="mmf ?(.*)", allow_sudo=True))
 async def handler(event):
     if event.fwd_from:
         return
