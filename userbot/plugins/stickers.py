@@ -20,8 +20,8 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from Lion import CMD_HELP, bot
-from Lion.LionConfig import Var
+from deadlybot import CMD_HELP, bot
+from deadlybot.Config import Var
 
 KANGING_STR = [
     "Using Witchery to kang this sticker...",
