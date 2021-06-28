@@ -31,7 +31,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-deadlybot = Config.CUSTOM_STICKER_PACK_NAME
+mafiabot = Config.CUSTOM_STICKER_PACK_NAME
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
@@ -101,9 +101,9 @@ async def kang(args):
 
         packname = f"HB_{user.username}_DeadlyBot_{pack}"
         packnick = (
-            f"{deadlybot} Vol.{pack}"
-            if deadlybot
-            else f"@{user.username}'s Deaslybot Vol.{pack}"
+            f"{mafiabot} Vol.{pack}"
+            if mafiabot
+            else f"@{user.username}'s DeadlyBot Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -137,8 +137,8 @@ async def kang(args):
                     pack += 1
                     packname = f"HB_{user.username}_by_{user.username}_{pack}"
                     packnick = (
-                        f"{deadlybot} Vol.{pack}"
-                        if deadlybot
+                        f"{mafiabot} Vol.{pack}"
+                        if mafiabot
                         else f"@{user.username}'s DeadlyBot Vol.{pack}"
                     )
                     await args.edit(
