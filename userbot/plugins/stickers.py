@@ -265,7 +265,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"`LE TERA STICKER IS [PACK](t.me/addstickers/{packname}) MEIN DAAL DIYA..ENJOY KR 😂🔥",
+            f"LE TERA STICKER IS [PACK](t.me/addstickers/{packname}) MEIN DAAL DIYA..ENJOY KR 😂🔥",
             parse_mode="md",
         )
 
