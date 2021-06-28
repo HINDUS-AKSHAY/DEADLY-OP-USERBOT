@@ -7,6 +7,7 @@ from telegraph import Telegraph, exceptions, upload_file
 from . import *
 
 
+DEADLY_NAME = str(ALIVE_NAME) if ALIVE_NAME else "Deadly User"
 
 opsameer = str(ALIVE_NAME) if ALIVE_NAME else "Deadly Bot"
 
