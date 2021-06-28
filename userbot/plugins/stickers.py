@@ -21,7 +21,8 @@ from telethon.tl.types import (
 )
 
 from userbot import bot
-from userbot.Config import Var
+from userbot.Config import Config
+
 
 KANGING_STR = [
     "Using Witchery to kang this sticker...",
