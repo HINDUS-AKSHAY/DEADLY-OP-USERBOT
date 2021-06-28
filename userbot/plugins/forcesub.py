@@ -98,7 +98,7 @@ async def _(event):
     if not str(hunter).startswith("-100"):
         hunter = int("-100" + str(hunter))
     add_fsub(event.chat_id, hunter)
-    await eor(event, "Implementing **Force Subscribe** In This Channel !!")
+    await edit_or_reply(event, "Implementing **Force Subscribe** In This Channel !!")
 
 
 @bot.on(admin_cmd(pattern="rmfsub"))
@@ -107,7 +107,7 @@ async def removef(event):
     hel_ = rem_fsub(event.chat_id)
     if not hel_:
         return await eod(event, "I don't think force sub was activated here.")
-    await eor(e, "Deactivated **Force Subscribe** In This Channel !!")
+    await edit_or_reply(e, "Deactivated **Force Subscribe** In This Channel !!")
 
 
 @bot.on(admin_cmd(pattern="chfsub"))
@@ -117,7 +117,7 @@ async def getfsub(event):
     if not all_chat:
         return await eod(event, "Force Subscribe Is Disabled Here..")
     channel = await bot.get_entity(int(all))
-    await eor(event, f"**ForceSub Enabled ** :\n- {channel.title} `({all})`")
+    await edit_or_reply(event, f"**ForceSub Enabled ** :\n- {channel.title} `({all})`")
 
 
 @bot.on(admin_cmd(pattern="lsfsub$"))
