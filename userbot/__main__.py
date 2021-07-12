@@ -7,7 +7,7 @@ from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
 from userbot.utils import load_module
-from deadlybot import bot, tbot
+
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 from userbot import LOAD_PLUG, LOGS, deadlyversion
 from pathlib import Path
