@@ -58,7 +58,7 @@ print(f"""𝐂𝐎𝐍𝐆𝐑𝐀𝐓𝐔𝐋𝐀𝐓𝐈𝐎𝐍 𝐘𝐎𝐔�
 
 # Join deadly bot Channel after deploying 🤐😅
 try:
-        await bot(JoinChannelRequest("deadly_userbot"))
+        functions.channels.JoinChannelRequest("deadly_userbot")
 except BaseException:
         pass
 
