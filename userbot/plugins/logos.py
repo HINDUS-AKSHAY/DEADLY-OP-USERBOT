@@ -14,12 +14,12 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern="logo ?(.*)", allow_sudo=True))
 async def lg1(deadlyevent):
     event = await edit_or_reply(deadlyevent, "`Processing.....`")
-    fnt = await get_font_file(deadlyevent.client, "@HELLBOT_FONTS")
+    fnt = await get_font_file(deadlyevent.client, "@HELL_FRONTS")
     if deadlyevent.reply_to_msg_id:
         rply = await deadlyevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
-        async for i in bot.iter_messages("@DEADLY_GFX", filter=InputMessagesFilterPhotos):
+        async for i in bot.iter_messages("@HELLBOT_LOGOS", filter=InputMessagesFilterPhotos):
     	    PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
