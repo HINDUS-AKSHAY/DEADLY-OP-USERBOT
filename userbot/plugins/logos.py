@@ -14,7 +14,7 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern="logo ?(.*)", allow_sudo=True))
 async def lg1(deadlyevent):
     event = await edit_or_reply(deadlyevent, "`Processing.....`")
-    fnt = await get_font_file(deadlyevent.client, "@DEADLY_FRONTS")
+    fnt = await get_font_file(deadlyevent.client, "@HELLBOT_FONTS")
     if deadlyevent.reply_to_msg_id:
         rply = await deadlyevent.get_reply_message()
         logo_ = await rply.download_media()
