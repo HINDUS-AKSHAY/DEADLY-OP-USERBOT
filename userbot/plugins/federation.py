@@ -10,7 +10,7 @@ from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly User"
 
-savagebot = bot.uid
+deadlybot = bot.uid
 
 
 bots = "@MissRose_bot"
