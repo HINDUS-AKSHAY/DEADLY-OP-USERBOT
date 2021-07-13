@@ -7,9 +7,11 @@ from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocu
 
 from . import *
 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
 
 PICS_STR = []
 deadly_mention = f"[{DEFAULTUSER}](tg://user?id={opsameer})"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
 
 @bot.on(admin_cmd(pattern="logo ?(.*)"))
 @bot.on(sudo_cmd(pattern="logo ?(.*)", allow_sudo=True))
