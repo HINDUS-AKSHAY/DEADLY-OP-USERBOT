@@ -8,6 +8,7 @@ from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocu
 from . import *
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
+opsameer = deadlybot.uid
 
 PICS_STR = []
 deadly_mention = f"[{DEFAULTUSER}](tg://user?id={opsameer})"
