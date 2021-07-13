@@ -12,7 +12,7 @@ from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DeadlyBot User"
 
-deadly = bot.uid
+deadlybot = bot.uid
 
 
 global USER_AFK  # pylint:disable=E0602
