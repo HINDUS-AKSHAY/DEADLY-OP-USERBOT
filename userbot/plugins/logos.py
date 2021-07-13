@@ -13,7 +13,7 @@ PICS_STR = []
 @bot.on(admin_cmd(pattern="logo ?(.*)"))
 @bot.on(sudo_cmd(pattern="logo ?(.*)", allow_sudo=True))
 async def lg1(deadlyevent):
-    event = await eor(deadlyevent, "`Processing.....`")
+    event = await edit_or_reply(deadlyevent, "`Processing.....`")
     fnt = await get_font_file(deadlyevent.client, "@DEADLY_FRONTS")
     if deadlyevent.reply_to_msg_id:
         rply = await deadlyevent.get_reply_message()
@@ -34,7 +34,7 @@ async def lg1(deadlyevent):
         font_size_ = 130
         strik = 20
     if not text:
-        await eod(event, "**Give some text to make a logo !!**")
+        await edit_or_delete(event, "**Give some text to make a logo !!**")
         return
     img = Image.open(logo_)
     draw = ImageDraw.Draw(img)
