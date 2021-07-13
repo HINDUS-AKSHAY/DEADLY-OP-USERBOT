@@ -9,6 +9,7 @@ from . import *
 
 
 PICS_STR = []
+deadly_mention = f"[{DEFAULTUSER}](tg://user?id={opsameer})"
 
 @bot.on(admin_cmd(pattern="logo ?(.*)"))
 @bot.on(sudo_cmd(pattern="logo ?(.*)", allow_sudo=True))
