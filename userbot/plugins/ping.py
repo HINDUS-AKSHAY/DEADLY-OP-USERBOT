@@ -9,8 +9,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Deadly User"
 opsameer = borg.uid
 
 
-@bot.on(admin_cmd(pattern=f"2ping$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"2ping$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
