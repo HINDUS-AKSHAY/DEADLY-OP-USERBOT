@@ -56,10 +56,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@MafiaBot_Support":
+        if event.query.user_id == bot.uid and query == "hellbot_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
+            for x in CMD_LIST.values():
+                for y in x:
+                    apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please",
                 text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Cᴍᴅɴs__ :`{len(apn)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
