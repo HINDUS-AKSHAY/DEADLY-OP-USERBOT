@@ -17,7 +17,7 @@ deadly_emoji = Config.EMOJI_IN_HELP
 
 
 def button(page, modules):
-    Row = mafia_row
+    Row = deadly_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
