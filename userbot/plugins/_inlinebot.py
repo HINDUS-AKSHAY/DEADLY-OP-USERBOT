@@ -61,7 +61,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ__ :`{len(CMD_HELP)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
+                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Cᴍᴅɴs__ :`{len(apn)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
