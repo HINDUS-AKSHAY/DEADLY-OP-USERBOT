@@ -52,20 +52,18 @@ def button(page, modules):
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(InlineQuery)  # pylint:disable=E0602
-    async def inline_handler(event):
-        builder = event.builder
-        result = None
-        query = event.text
-        if event.query.user_id == bot.uid and query == "hellbot_help":
-            rev_text = query[::-1]
-            veriler = button(0, sorted(CMD_HELP))
-            apn = []
-            for x in CMD_LIST.values():
-                for y in x:
-                    apn.append(y)
-            result = await builder.article(
+    async def page(event):
+        if not event.query.user_id == bot.uid:
+            return await event.answer(
+                "Hᴇʏ Bɪᴛᴄʜ Dᴏɴᴛ Usᴇ Mʏ ʙᴏᴛ .. ᴍᴀᴋᴇ Uʀ Oᴡɴ Usᴇʀʙᴏᴛ Aɴᴅ Usᴇ",
+                cache_time=0,
+                alert=True,
+            )
+        page = int(event.data_match.group(1).decode("UTF-8"))
+        veriler = button(page, CMD_HELP)
+        await event.edit(
                 f"Hey! Only use .help please",
-                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Cᴍᴅɴs__ :`{len(apn)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
+                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Cᴍᴅɴs__ :`345`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
