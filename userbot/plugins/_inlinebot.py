@@ -12,10 +12,9 @@ from userbot.cmdhelp import *
 from deadlybot.utils import *
 from userbot.Config import Config
 
-mafia_row = Config.BUTTONS_IN_HELP
-mafia_emoji = Config.EMOJI_IN_HELP
-# thats how a lazy guy imports
-# MafiaBot
+deadly_row = Config.BUTTONS_IN_HELP
+deadly_emoji = Config.EMOJI_IN_HELP
+
 
 def button(page, modules):
     Row = mafia_row
@@ -39,18 +38,18 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏰᎯᏣᏦ {mafia_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏰᎯᏣᏦ {deadly_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{mafia_emoji} ❌ {mafia_emoji}•", data="close"
+               f"•{deadly_emoji} ❌ {deadly_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{mafia_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{deadly_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in MafiaBot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in DeadlyBot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -64,7 +63,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running MafiaBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**𝚁𝚄𝙽𝙽𝙸𝙽𝙶 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃**\n\n__𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙲𝙼𝙽𝙳𝚂 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙴𝙳__ :`387`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -79,20 +78,20 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@MafiaBot_Support",
-                text="""**Hey! This is [MafiaBot.](https://t.me/MafiaBot_Support) \nYou can know more about me from the links given below 👇**""",
+                text="""**𝙷𝙴𝚈! 𝚃𝙷𝙸𝚂 𝙸𝚂 [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃](https://t.me/dEADLY_USERBOT)\n 𝚄 𝙲𝙰𝙽 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙻𝙸𝙽𝙺𝚂 𝙶𝙸𝚅𝙴𝙽 𝙱𝙴𝙻𝙾𝚆 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/MafiaBot_Support"),
+                        custom.Button.url("🔥 CHANNEL 🔥", ""),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/MafiaBot_Chit_Chat"
+                            "⚡ GROUP ⚡", ""
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/H1M4N5HU0P/MAFIA-BOT"),
+                            "✨ REPO ✨", ""),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/aRFWP4_RCaE"
+                            "🔰 TUTORIAL 🔰", ""
                     )
                     ],
                 ],
@@ -104,14 +103,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [MafiaBot](https://t.me/MafiaBot_Support) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Lᴇɢᴇɴʀʏ Aғ** [DᴇᴀᴅʟʏBᴏt](https://t.me/DEADLY_USERBOT) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Cᴍɴᴅs Iɴsᴛᴀʟʟᴇᴅ :** `397`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -120,11 +119,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
-              "⚜️MafiaBot Menu Provider Is now Closed⚜️\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**", 5, link_preview=False
+              "⚜️ DᴇᴀᴅʟʏBᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ ⚜️\n\n         **[© DᴇᴀᴅʟʏBᴏᴛ ™](t.me/DEADLY_USERBOT)**", 5, link_preview=False
             )
         else:
-            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™"
-            await event.answer(mafia_alert, cache_time=0, alert=True)
+            deadly_alert = "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™"
+            await event.answer(deadly_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
@@ -132,7 +131,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
@@ -165,7 +164,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
