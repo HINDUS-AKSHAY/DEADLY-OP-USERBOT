@@ -52,21 +52,19 @@ def button(page, modules):
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(InlineQuery)  # pylint:disable=E0602
-    async def page(event):
-        if not event.query.user_id == bot.uid:
-            return await event.answer(
-                "Hᴇʏ Bɪᴛᴄʜ Dᴏɴᴛ Usᴇ Mʏ ʙᴏᴛ .. ᴍᴀᴋᴇ Uʀ Oᴡɴ Usᴇʀʙᴏᴛ Aɴᴅ Usᴇ",
-                cache_time=0,
-                alert=True,
-            )
-        page = int(event.data_match.group(1).decode("UTF-8"))
-        veriler = button(page, CMD_HELP)
-        await event.edit(
+async def inline_handler(event):
+        builder = event.builder
+        result = None
+        query = event.text
+        if event.query.user_id == bot.uid and query == "@DEADLY_USERBOT":
+            rev_text = query[::-1]
+            veriler = button(0, sorted(CMD_HELP))
+            result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Rᴜɴɴɪɴɢ DᴇᴀᴅʟʏBᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Cᴍᴅɴs__ :`345`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
+                text=f"**RUNNING DEADLY BOT**\n\n__𝙽𝙾. 𝙾𝙵 𝙿𝙻𝚄𝙶𝙶𝙸𝙽𝚂 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙴𝙳__ :`{len(CMD_HELP)}`\n**𝙿𝙰𝙶𝙴:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
-            )
+            )                
         elif query.startswith("http"):
             part = query.split(" ")
             result = builder.article(
@@ -110,7 +108,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Lᴇɢᴇɴᴅʀʏ Aғ** [DᴇᴀᴅʟʏBᴏᴛ](https://t.me/deadly_userbot) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ:** `{len(CMD_HELP)}`\n**Pᴀɢᴇ:** {page + 1}/{veriler[0]}",
+            f"**Lᴇɢᴇɴᴅʀʏ Aғ** [DᴇᴀᴅʟʏBᴏᴛ](https://t.me/deadly_userbot) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Cᴍɴᴅs Iɴsᴛᴀʟʟᴇᴅ:** `356`\n**Pᴀɢᴇ:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
