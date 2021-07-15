@@ -6,7 +6,7 @@
 # JISNE KANG KIYA USKI MA CHOD DI JAYEGI
 # BHADWE KANG MT KR LENA ...
 # TERI MA KI CHUT KANGER
-# CHL AGAR KANG HI KRNA HE TO CREDIT KE SATH KR
+# CHL AGAR KANG HI KRNA HE TO CREDIT KE SATKR
 
 marculs=9
 from telethon.errors.rpcerrorlist import (UserIdInvalidError,
@@ -20,11 +20,9 @@ from telethon.tl.types import (ChannelParticipantsAdmins,
                                    ChatBannedRights,
                                      MessageEntityMentionName,
                                        MessageMediaPhoto)
-from deadlybot.utils import register, errors_handler
-from deadlybot.utils import admin_cmd
+from userbot.utils import register
+from userbot.utils import admin_cmd
 from userbot import bot as borg
-from userbot.cmdhelp import CmdHelp
-
 async def get_full_user(event):  
     args = event.pattern_match.group(1).split(':', 1)
     extra = None
@@ -51,7 +49,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("Error... Please report at @DEADLY_USERBOT", str(err))           
+            return await event.edit("Error... Please report at @Deviluserbot", str(err))           
     return user_obj, extra
 
 global hawk,moth
@@ -68,11 +66,11 @@ async def get_user_from_id(user, event):
     return user_obj
 @borg.on(admin_cmd(pattern="gpromote ?(.*)"))
 async def gben(userbot):
-    mb = deadly = userbot
+    dc = dark = userbot
     i = 0
-    sender = await mb.get_sender()
+    sender = await dc.get_sender()
     me = await userbot.client.get_me()
-    await deadly.edit("`promoting...`")
+    await dark.edit("`promoting...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -86,21 +84,21 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await deadly.edit("U want to promote urself 😑😑 waao..")
+       k = await dark.edit("U want to promote urself 😑😑 waao..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
+        return await dark.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
                      if (d.is_group or d.is_channel)
                      ]
-        rgt = ChatAdminRights(add_admins=True,
+        rgt = ChatAdminRights(add_admins=False,
                                invite_users=True,
-                                change_info=True,
+                                change_info=False,
                                  ban_users=True,
                                   delete_messages=True,
                                    pin_messages=True)
@@ -108,21 +106,21 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await deadly.edit(f"**Promoted in Chats **: `{i}`")
+             await dark.edit(f"**Promoted in Chats **: `{i}`")
           except:
              pass
     else:
-        await deadly.edit(f"**Reply to a user you dumbo !!**")
-    return await deadly.edit(
+        await dark.edit(f"**Reply to a user you dumbo !!**")
+    return await dark.edit(
         f"**Globally promoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
     )
 @borg.on(admin_cmd(pattern="gdemote ?(.*)"))
 async def gben(userbot):
-    mb = deadly = userbot
+    dc = dark = userbot
     i = 0
-    sender = await mb.get_sender()
+    sender = await dc.get_sender()
     me = await userbot.client.get_me()
-    await deadly.edit("`demoting...`")
+    await dark.edit("`demoting...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -136,13 +134,13 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await deadly.edit("U want to demote urself 😑😑 waao..")
+       k = await dark.edit("U want to demote urself 😑😑 waao..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
+        return await dark.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
@@ -158,17 +156,11 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await deadly.edit(f"**Demoted in Chats **: `{i}`")
+             await dark.edit(f"**Demoted in Chats **: `{i}`")
           except:
              pass
     else:
-        await deadly.edit(f"**Reply to a user you dumbo !!**")
-    return await deadly.edit(
+        await dark.edit(f"**Reply to a user you dumbo !!**")
+    return await dark.edit(
         f"**Globally Demoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
     )
-
-CmdHelp("global_promote").add_command(
-  'gpromote', '<reply> / <userid> / <username>', 'gpromote your friend using this hack'
-).add_command(
-  'gdemote', '<reply> / <userid> / <username>', 'gdemote your enemy using this hack'
-).add()
