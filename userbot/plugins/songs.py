@@ -9,13 +9,13 @@ from userbot.helpers.functions import deEmojify
 
 @bot.on(admin_cmd(pattern="lyrics(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="lyrics(?: |$)(.*)", allow_sudo=True))
-async def nope(h1m4n5hu0p):
-    mafia = opsameer.pattern_match.group(1)
-    if not mafia:
-        if h1m4n5hu0p.is_reply:
-            (await h1m4n5hu0p.get_reply_message()).message
+async def nope(opsameer):
+    deadly = opsameer.pattern_match.group(1)
+    if not deadly:
+        if opsameer.is_reply:
+            (await opsameer.get_reply_message()).message
         else:
-            await h1m4n5hu0p.edit(
+            await opsameer.edit(
                 "`Sir please give some query to search and download it for you..!`"
             )
             return
@@ -23,13 +23,13 @@ async def nope(h1m4n5hu0p):
     troll = await bot.inline_query("iLyricsBot", f"{(deEmojify(mafia))}")
 
     await troll[0].click(
-        h1m4n5hu0p.chat_id,
-        reply_to=h1m4n5hu0p.reply_to_msg_id,
-        silent=True if h1m4n5hu0p.is_reply else False,
+        opsameer.chat_id,
+        reply_to=opsameer.reply_to_msg_id,
+        silent=True if opsameer.is_reply else False,
         hide_via=True,
     )
 
-    await h1m4n5hu0p.delete()
+    await opsameer.delete()
 
 #>>>>>>>>>>>>>>>>>>✓✓✓✓✓<<<<<<<<<<<<<<<<<<<
 
