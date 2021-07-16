@@ -67,6 +67,7 @@ if ENV:
         # Set to True if you want to block users that are spamming your PMs.
         SLAP_USERNAME = os.environ.get("SLAP_USERNAME", None)
         GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
+        INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "DISABLE")
         GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
         NO_P_M_SPAM = bool(os.environ.get("NO_P_M_SPAM", True))
         # define "spam" in PMs
