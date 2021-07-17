@@ -1,4 +1,3 @@
-
 from math import ceil
 from re import compile
 import asyncio
@@ -15,7 +14,6 @@ from userbot.Config import Config
 deadly_row = Config.BUTTONS_IN_HELP
 deadly_emoji = Config.EMOJI_IN_HELP
 
-
 def button(page, modules):
     Row = deadly_row
     Column = 3
@@ -30,7 +28,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{mafia_emoji} " + pair, data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{deadly_emoji} " + pair, data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -38,18 +36,18 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏰᎯᏣᏦ {deadly_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"☜︎︎︎ 𝙱𝙰𝙲𝙺༆", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{deadly_emoji} ❌ {deadly_emoji}•", data="close"
+               f"༒︎ 𝙲𝙻𝙾𝚂𝙴 ༒︎", data="close"
             ),
             custom.Button.inline(
-               f"{deadly_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"༆𝙽𝙴𝚇𝚃 ☞︎︎︎", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in DeadlyBot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in Deadlybot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -63,10 +61,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**𝚁𝚄𝙽𝙽𝙸𝙽𝙶 𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃**\n\n__𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙲𝙼𝙽𝙳𝚂 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙴𝙳__ :`387`\n**page:** 1/{veriler[0]}",
+                text=f"**Rᴜɴɴɪɴɢ Dᴇᴀᴅʟʏ  Bᴏᴛ**\n\n__Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ__ :`{len(CMD_HELP)}`\n**Pᴀɢᴇ:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
-            )
+            )                                      
         elif query.startswith("http"):
             part = query.split(" ")
             result = builder.article(
@@ -78,20 +76,20 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@MafiaBot_Support",
-                text="""**𝙷𝙴𝚈! 𝚃𝙷𝙸𝚂 𝙸𝚂 [𝙳𝙴𝙰𝙳𝙻𝚈 𝙱𝙾𝚃](https://t.me/dEADLY_USERBOT)\n 𝚄 𝙲𝙰𝙽 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙻𝙸𝙽𝙺𝚂 𝙶𝙸𝚅𝙴𝙽 𝙱𝙴𝙻𝙾𝚆 👇**""",
+                text="""**Hey! This is [Dᴇᴀᴅʟʏ Bᴏᴛ](https://t.me/deadly_userbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", ""),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/deadly_techy"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", ""
+                            "⚡ GROUP ⚡", "https://t.me/deadly_userbot"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", ""),
+                            "✨ REPO ✨", "https://t.me/deadly_userbot"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", ""
+                            "🔰 TUTORIAL 🔰", "https://t.me/deadly_userbot"
                     )
                     ],
                 ],
@@ -103,14 +101,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
+                "Hᴇʏ Tʜᴇʀᴇ Pʟᴇᴀsᴇ Mᴀᴋᴇ Uʀ Oᴡɴ Dᴇᴀᴅʟʏ  Bᴏᴛ Aɴᴅ Usᴇ ..Dᴏɴᴛ Usᴇ Mɪɴᴇ      DDᴇᴀᴅʟʏBᴏt ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Lᴇɢᴇɴʀʏ Aғ** [DᴇᴀᴅʟʏBᴏt](https://t.me/DEADLY_USERBOT) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Cᴍɴᴅs Iɴsᴛᴀʟʟᴇᴅ :** `397`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Lᴇɢᴇɴᴅʀʏ Aғ** [DᴇᴀᴅʟʏBᴏᴛ](https://t.me/DEADLY_USERBOT) __Wᴏʀᴋɪɴɢ...__\n\n**Nᴜᴍʙᴇʀ Oғ Pʟᴜɢɪɴs Iɴsᴛᴀʟʟᴇᴅ:** `{len(CMD_HELP)}`\n**Pᴀɢᴇ:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -118,20 +116,20 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_mafia(event,
-              "⚜️ DᴇᴀᴅʟʏBᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ ⚜️\n\n         **[© DᴇᴀᴅʟʏBᴏᴛ ™](t.me/DEADLY_USERBOT)**", 5, link_preview=False
+            await delete_deadly(event,
+              "⚜️ Dᴇᴀᴅʟʏ Bᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ ⚜️\n\n         **[⭕️ DᴇᴀᴅʟʏBᴏᴛ™](https://t.me/DEADLY_USERBOT)", 5, link_preview=False
             )
         else:
-            deadly_alert = "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™"
-            await event.answer(deadly_alert, cache_time=0, alert=True)
-          
+            mafia_alert = "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. ©  ™"
+            await event.answer(mafia_alert, cache_time=0, alert=True)
+                            
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
     )
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBot Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. © DᴇᴀᴅʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
@@ -139,7 +137,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         commands = event.data_match.group(2).decode("UTF-8")
         try:
-            buttons = [
+            buttons = [                
                 custom.Button.inline(
                     "⚡ " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
@@ -151,7 +149,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"page({page})")])
+        buttons.append([custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"page({page})")])
         await event.edit(
             f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
@@ -164,7 +162,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Aᴘɴᴀ Kʜᴜᴅᴋᴀ Bᴏᴛ Bɴᴀ Yʀ ᴍᴇʀᴀ Usᴇ ᴍᴛ Kʀ © DᴇᴀᴅʟʏBᴏᴛ ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. © DᴇᴀᴅʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
@@ -197,11 +195,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result += f"**💬 Explanation:** `{command['usage']}`\n"
             result += f"**⌨️ For Example:** `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
-
+            
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"Information[{page}]({cmd})")
+                custom.Button.inline("☜︎︎︎ 𝙱𝙰𝙲𝙺༆", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
