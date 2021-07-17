@@ -307,26 +307,6 @@ async def hehehe(event):
             )
             await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
 
-NEEDIT = Config.INSTANT_BLOCK
-if NEEDIT == "ENABLE":
-    @bot.on(events.NewMessage(incoming=True))
-    async def on_new_private_message(event):
-        event.message.message
-        event.message.media
-        event.message.id
-        event.message.to_id
-        chat_id = event.chat_id
-        sender = await bot.get_entity(chat_id)
-        if chat_id == bot.uid:
-            return
-        if chat_id == 1432756163:
-            return
-        if sender.bot:
-            return
-        if sender.verified:
-            return
-        if not pmpermit_sql.is_approved(chat_id):
-            await bot(functions.contacts.BlockRequest(chat_id))
 
 
 CmdHelp("pmpermit").add_command(
