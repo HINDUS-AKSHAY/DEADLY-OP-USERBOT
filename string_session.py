@@ -1,9 +1,17 @@
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
-print("")
-print("""Welcome To DeadlyBot String Session\nGenerator By @SAMEER_795\n\n""")
-print("""Welcome To DeadlyBot String Session\nGenerator By @SAMEER_795\n\n""")
+print("\n\n")
+print(""" © Legendry_af_DeadlyBot™
+                                            
+                         
+▒█▀▀▄ ▒█▀▀▀ ░█▀▀█ ▒█▀▀▄ ▒█░░░ ▒█░░▒█ 
+▒█░▒█ ▒█▀▀▀ ▒█▄▄█ ▒█░▒█ ▒█░░░ ▒█▄▄▄█ 
+▒█▄▄▀ ▒█▄▄▄ ▒█░▒█ ▒█▄▄▀ ▒█▄▄█ ░░▒█░░ 
+▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀ 
+▒█▀▀▄ ▒█░░▒█ ░▒█░░ 
+▒█▄▄█ ▒█▄▄▄█ ░▒█░░ \n\n""")
+print("""WELCOME TO DEADLY STRING GENERATOR\n BY- @SAMEER_795\n\n""")
 print("""LET'S GET START\n\n""")
 print("""Enter Your Valid Details To Continue!\n\n """)
 
