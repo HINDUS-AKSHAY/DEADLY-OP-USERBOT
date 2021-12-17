@@ -31,7 +31,7 @@ edit_time = 5
 file1 = Config.ALIVE_PIC
 """ =======================CONSTANTS====================== """
 
-pm_caption = "__                       **🔥 #ᗪᗴᗩᗪᒪY_Oᑎ_ᖴIᖇᗴ 🔥**  __\n\n"
+pm_caption = "__                       🔥 #ᗪᗴᗩᗪᒪY_Oᑎ_ᖴIᖇᗴ 🔥  __\n\n"
 
 pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**      『{DEFAULTUSER}』**\n\n"
 pm_caption += "✘ ᗩᗷOᑌT ᗰY ՏYՏTᗴᗰ ✘\n\n"
