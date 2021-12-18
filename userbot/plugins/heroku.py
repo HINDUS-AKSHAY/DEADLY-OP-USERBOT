@@ -16,7 +16,7 @@ from userbot.cmdhelp import CmdHelp
 import urllib3
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
-deadly_mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
+deadly_mention = f"[{DEFAULTUSER}](tg://user?id={opsameer})"
 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
