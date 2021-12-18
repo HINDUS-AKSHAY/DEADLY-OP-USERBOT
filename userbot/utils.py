@@ -228,6 +228,7 @@ def sudo_cmd(pattern=None, command=None, **args):
 async def edit_or_reply(
     event,
     text,
+    deflink=false,
     parse_mode=None,
     link_preview=None,
     file_name=None,
