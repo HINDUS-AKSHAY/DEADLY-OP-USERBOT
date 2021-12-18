@@ -15,8 +15,7 @@ from deadlybot.utils import admin_cmd, sudo_cmd,  edit_or_reply as eor
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
-deadly_mention = f"[{DEFAULTUSER}](tg://user?id={opsameer})"
+deadly_mention = Config.ALIVE_NAME
 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
