@@ -8,14 +8,14 @@ from os import execl
 from time import sleep
 import heroku3
 import requests
-
+from userbot import ALIVE_NAME
 from userbot import CMD_HELP
 from userbot.Config import Config
 from deadlybot.utils import admin_cmd, sudo_cmd,  edit_or_reply as eor
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
-DEFAULTUSER = Config.YOUR_NAME 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
 deadly_mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 
