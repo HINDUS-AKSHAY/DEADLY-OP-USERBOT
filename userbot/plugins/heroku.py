@@ -15,6 +15,9 @@ from deadlybot.utils import admin_cmd, sudo_cmd,  edit_or_reply as eor
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
+deadly_mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
+
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # =====================================
 
