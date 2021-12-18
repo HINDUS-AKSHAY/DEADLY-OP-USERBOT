@@ -181,7 +181,7 @@ async def dyno_usage(dyno):
     )
 
 
-@borg.on(deadly_cmd(pattern="logs$"))
+@borg.on(admin_cmd(pattern="logs$"))
 @borg.on(sudo_cmd(pattern="logs$", allow_sudo=True))
 async def _(dyno):
     if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
