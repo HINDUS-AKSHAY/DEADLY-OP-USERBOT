@@ -40,7 +40,7 @@ pm_caption += "➠ Tᗴᗩᗰ ᘜᖇOᑌᑭ ➣ [𝐃𝐄𝐀𝐃𝐋𝐘](https
 pm_caption += "➠ ՏᑌᑭᑭOᖇT ᑕᕼᑎᑎᒪ ➣ [𝐉𝐎𝐈𝐍](https://t.me/DEADLY_TECHY)\n"
 pm_caption += "➠ ՏᑌᑭᑭOᖇT ᘜᖇᑭ ➣ [𝐉𝐎𝐈𝐍](https://t.me/deadly_userbot)\n"
 pm_caption += "➠ ᑕᖇᗴᗩTOᖇ ➣ [𝐒𝐀𝐌𝐄𝐄𝐑](t.me/sameer_795)\n\n" 
-pm_caption += "[🔥ᗪᗴᑭᒪOY ᗪᗴᗩᗪᒪY ᗷOT🔥](https://github.com/SAMEERPANTHI/DEADLY-OP-BOT)"
+pm_caption += "[🔥ᗪᗴᑭᒪOY ᗪᗴᗩᗪᒪY ᗷOT🔥](https://github.com/DEADLY-FIGHTERS/DEADLY-OP-BOT)"
                                                      
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
