@@ -15,7 +15,7 @@ from deadlybot.utils import admin_cmd, sudo_cmd,  edit_or_reply as eor
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "deadly User"
+DEFAULTUSER = Config.YOUR_NAME 
 deadly_mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 
