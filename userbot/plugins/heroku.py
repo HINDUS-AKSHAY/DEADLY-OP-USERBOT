@@ -15,7 +15,7 @@ from deadlybot.utils import admin_cmd, sudo_cmd,  edit_or_reply as eor
 from userbot.cmdhelp import CmdHelp
 import urllib3
 
-deadly_mention = Config.ALIVE_NAME
+deadly_mention = OP SIR
 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
